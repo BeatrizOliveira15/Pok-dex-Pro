@@ -29,19 +29,31 @@ body{
     }
 }
 
-main {
+.main{
     padding: 20px;
     background-color: #C4F9EB;
-    display: flex;
     border-radius: 20px;
     margin: 50px 50px;
-    height: 700px;
+    height: auto;
 
+    .nomes{
+        display: flex;
+        img{
+            height: 800px;
+        }
+    }
+
+    p{
+        margin-left: 90%;
+        color: #02B082;
+        font-size: 20px;
+    }
 
     h1{
-        font-size: 200px;
-        padding: 80px;
+        font-size: 150px;
+        padding: 20px;
         color: #02B082;
+    
     }
 
 }
