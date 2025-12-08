@@ -125,3 +125,19 @@ img {
 @media screen {
   
 }
+
+.card-header {
+  cursor: pointer;
+}
+
+.card-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.card.expanded .card-content {
+  max-height: 200px;
+  padding: 10px;
+}
