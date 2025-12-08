@@ -18,11 +18,17 @@ header{
         height: 130px;
     }
 }
-body{
+body.claro {
     background-color: var(--base);
-    background-repeat: no-repeat;
-    background-size: cover;
+    color: var(--titulos);
 }
+
+/* 🌙 Tema Escuro */
+body.escuro {
+    background-color: var(--sombra);
+    color: var(--titulos);
+}
+
 .menu{
     display: flex;
     align-items: center;
