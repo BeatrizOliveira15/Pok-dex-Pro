@@ -1,17 +1,28 @@
 async function chamarAPI() {
-  const container = document.getElementById("pokemon-container", "b");
+const container = document.getElementById("pokemon-container");
 
+const dozePokemon = [
+    "mewtwo",
+    "mew",
+    "alakazam",
+    "espeon",
+    "gardevoir",
+    "metagross",
+    "slowbro",
+    "starmie",
+    "jirachi",
+    "abra",
+    "gallade",
+    "lugia",
+];
 
-  const resposta = await fetch("https://pokeapi.co/api/v2/type/psychic");
-  const dados = await resposta.json();
+const psychic = document.createElement("div");
+psychic.classList.add("pokemon-tipo", "b-tipo");
 
-  const listapokemon = dados.pokemon.slice(0, 12);
-
-  const psychic = document.createElement("div");
-  psychic.classList.add("pokemon-tipo", "b-tipo");
-
-  for (const p of listapokemon) {
-    const resposta2 = await fetch(p.pokemon.url);
+for (const pokemon of dozePokemon) {
+    const resposta2 = await fetch(
+        `https://pokeapi.co/api/v2/pokemon/${pokemon}`
+    );
     const det = await resposta2.json();
 
     const card = document.createElement("div");
