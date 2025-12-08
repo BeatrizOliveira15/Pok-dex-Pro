@@ -12,8 +12,7 @@ async function chamarAPI() {
   for (const p of listapokemon) {
     const resposta2 = await fetch(p.pokemon.url);
     const det = await resposta2.json();
-  
-  
+
     const card = document.createElement("div");
     card.classList.add("card");
 
