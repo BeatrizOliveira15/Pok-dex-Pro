@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+
+:root{
+    --base: #96DCC9;
+    --titulos: #02B082;
+    --base2: #C4F9EB;
+    --preto: black;
+    --sombra: rgba(0, 0, 0, 0.484);
+}
+header{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    img{
+        height: 130px;
+    }
+}
+body{
+    background-color: var(--base);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    background-color: var(--base2);
+    border-radius: 30px;
+    height: 58px;
+    width: 780px;
+
+    button{
+        background-color: var(--titulos);
+        border-radius: 20px;
+        border: var(--titulos);
+        height: 40px;
+        width: 130px;
+        font-family: "ADLaM Display", system-ui;
+        font-size: 16px;
+    }
+    button:hover{
+        background-color: var(--preto);
+        color: var(--titulos);
+    }
+    a{
+        color: var(--titulos);
+        text-decoration: none;
+        font-size: 23px;
+        padding: 18px;
+        font-family: "ADLaM Display", system-ui;
+
+    }
+}
+
+.main{
+    padding: 20px;
+    background-color: var(--base2);
+    border-radius: 20px;
+    margin: 50px 50px;
+    height: auto;
+    box-shadow: 0 6px 6px 0 var(--sombra);
+
+    .nomes{
+        display: flex;
+        img{
+            height: 800px;
+        }
+    }
+
+    p{
+        margin-left: 90%;
+        color: var(--titulos);
+        font-size: 20px;
+        font-family: "ADLaM Display", system-ui;
+    }
+
+    h1{
+        font-size: 150px;
+        padding: 20px;
+        color: var(--titulos);
+        font-family: "Pixelify Sans", sans-serif;
+    }
+
+}
+
+footer{
+    margin: 50px 50px ;
+
+    h1{
+        font-size: 70px;
+        color: var(--titulos);
+        font-family: "ADLaM Display", system-ui;
+    }
+    p{
+        font-size: 30px;
+        color: var(--titulos);
+        font-family: "ADLaM Display", system-ui;
+        text-align: justify;
+    }
+}
