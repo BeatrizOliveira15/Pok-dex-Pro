@@ -18,14 +18,45 @@ body {
 
 }
 
-header {
-    margin-top: 0%;
-    height: 10rem;
+header{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    img{
+        height: 130px;
+    }
+}
 
-    img {
-      display: flex;
-      justify-content: flex-start;
-      padding-bottom: 50px;
+.menu{
+    display: flex;
+    align-items: center;
+    background-color: var(--base2);
+    border-radius: 30px;
+    height: 58px;
+    width: 780px;
+
+    button{
+        background-color: var(--titulos);
+        border-radius: 20px;
+        border: var(--titulos);
+        height: 40px;
+        width: 130px;
+        font-family: "ADLaM Display", system-ui;
+        font-size: 16px;
+    }
+    button:hover{
+        background-color: var(--preto);
+        color: var(--titulos);
+    }
+    a{
+        color: var(--titulos);
+        text-decoration: none;
+        font-size: 23px;
+        padding: 18px;
+        font-family: "ADLaM Display", system-ui;
+
     }
 }
 
