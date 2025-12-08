@@ -121,6 +121,8 @@ img {
 }
 
 
-@media screen {
-  
+@media (max-width: 500px) {
+  body { padding: 12px; }
+  .card { padding: 12px; min-height: 220px; }
+  .card img { width: 100px; height: 100px; }
 }
