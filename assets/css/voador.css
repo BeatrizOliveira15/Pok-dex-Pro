@@ -27,7 +27,8 @@ header {
 }
 
 header img {
-  height: 130px;
+  height: 95px;
+  margin-left: 50px;
 }
 
 .menu {
@@ -38,6 +39,7 @@ header img {
   height: 58px;
   width: 790px;
   padding-right: 7px;
+  margin-left: 60px;
 }
 
 .menu button {
@@ -185,15 +187,15 @@ header img {
 .card-header h3 {
   display: flex;
   font-size: 35px;
-  margin-top: -60px;
-  margin-left: 90px;
+  margin-top: -80px;
+  margin-left: 120px;
 }
 
 .card-header h4 {
   display: flex;
   font-size: 20px;
-  margin-top: -25px;
-  margin-left: 90px;
+  margin-top: -30px;
+  margin-left: 120px;
 }
 
 .card-header h5 {
@@ -201,9 +203,25 @@ header img {
   font-size: 20px;
   color: var(--title);
   margin-top: -7px;
-  margin-left: 210px;
+  margin-left: 225px;
 }
 
+.card-header button {
+    background-color: var(--modo-escuro);
+    height: 42px;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 195px;
+    margin-top: -15px;
+}
+
+.card-header button:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: var(--mouse);
+  color: var(--titulos);
+}
 
 @media (max-width: 500px) {
   body { padding: 12px; }

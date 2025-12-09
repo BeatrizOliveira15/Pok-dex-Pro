@@ -48,6 +48,7 @@ async function carregarPokemons() {
         <h3>${p.name}</h3>
         <h4>${tipos}</h4>
         <h5>#${p.id}</h5>
+        <button id="button"> VEJA MAIS </button>
       </div>
 
       <div class="card-content">
