@@ -53,6 +53,7 @@ header{
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-left: 40px;
     
     img{
         height: 95px;
@@ -62,6 +63,7 @@ header{
 .menu{
     display: flex;
     align-items: center;
+    margin-left: 60px;
     background-color: var(--base2);
     border-radius: 30px;
     height: 58px;
