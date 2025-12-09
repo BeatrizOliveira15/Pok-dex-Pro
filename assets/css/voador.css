@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
 
 :root {
   --primary-color: #96D7DC;
@@ -12,118 +13,113 @@
   --mouse: #7fccd1;
 } 
 
-
 body {
   margin: 0;
   padding: 20px;
   background-color: var(--primary-color);
-
 }
 
-header{
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    
-    img{
-        height: 130px;
-    }
+header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.menu{
-    display: flex;
-    align-items: center;
-    background-color: var(--card-color);
-    border-radius: 30px;
-    height: 58px;
-    width: 790px;
+header img {
+  height: 130px;
+}
 
-    button{
-        background-color: var(--modo-escuro);
-        border-radius: 20px;
-        border: var(--titulos);
-        height: 40px;
-        width: 130px;
-        font-family: "ADLaM Display", system-ui;
-        font-size: 16px;
-    }
-    button:hover{
-        background-color: var(--mouse);
-        color: var(--titulos);
-    }
-    a{
-        color: var(--titulos);
-        text-decoration: none;
-        font-size: 23px;
-        padding: 18px;
-        font-family: "ADLaM Display", system-ui;
+.menu {
+  display: flex;
+  align-items: center;
+  background-color: var(--card-color);
+  border-radius: 30px;
+  height: 58px;
+  width: 790px;
+}
 
-    }
+.menu button {
+  background-color: var(--modo-escuro);
+  border-radius: 20px;
+  border: var(--titulos);
+  height: 40px;
+  width: 130px;
+  font-family: "ADLaM Display", system-ui;
+  font-size: 16px;
+}
+
+.menu button:hover {
+  background-color: var(--mouse);
+  color: var(--titulos);
+}
+
+.menu a {
+  color: var(--titulos);
+  text-decoration: none;
+  font-size: 23px;
+  padding: 18px;
+  font-family: "ADLaM Display", system-ui;
 }
 
 .escrita {
-    width: 800px;
-    margin-left: 50px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-
-
-  h1 {
+  width: 800px;
+  margin-left: 50px;
+  margin-top: 50px;
   display: flex;
-  justify-content:center;
+  flex-direction: column;
+}
+
+.escrita h1 {
+  display: flex;
+  justify-content: center;
   font-family: "Pixelify Sans", sans-serif;
   margin-bottom: 20px;
   color: var(--title);
   font-size: 100px;
-  }
+}
 
-  p {
+.escrita p {
   display: flex;
-  justify-content:left;
+  justify-content: left;
   text-align: center;
   padding-bottom: 10%;
-  }
+  font-family: "Signika Negative", sans-serif;
+  font-size: 18px;
+  border-bottom: 2.5px solid #ffffff;
+  margin-bottom: 40px;
 }
 
 .principal {
   display: flex;
-    img {
-      width: 500px;
-      height: 500px;
-      position: relative;
-      filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
-      margin-left: 80px;
-      margin-bottom: 20px;
-      margin-top: 5px;
-    }
 }
 
-
-
+.principal img {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
+  margin-left: 80px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
 
 .pokemon-tipo {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 80px;
-    justify-content: center;
-    
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
 }
 
 .card {
   background: var(--card-color);
   padding: 10px;
   width: 200px;
-  height: 220px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
-
-
 }
 
 .card h4 {
@@ -142,9 +138,7 @@ header{
 }
 
 
-img {
-  /* width: 100px;
-  height: 150px; */
+.card img {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -154,11 +148,6 @@ img {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-}
-
-
-@media screen {
-  
 }
 
 .card-header {
@@ -175,4 +164,9 @@ img {
 .card.expanded .card-content {
   max-height: 200px;
   padding: 10px;
+}
+
+.card-header img {
+  width: 120px;
+  height: 120px;
 }

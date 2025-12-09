@@ -33,22 +33,44 @@
 
 // chamarAPI();
 
-async function chamarAPI() {
+// IDs dos Pokémon que você quer
+const ids = [
+  187, // Hoppip
+  333, // Swablu
+  334, // Altaria
+  373, // Salamence
+  398, // Staraptor
+  458, // Mantyke
+  469, // Togekiss
+  519, // Pidove
+  587, // Emolga
+  722, // Rowlet
+  741, // Oricorio (Baile Style)
+  823  // Corviknight
+];
+
+async function carregarPokemons() {
   const container = document.getElementById("pokemon-container");
-
-  const resposta = await fetch("https://pokeapi.co/api/v2/type/psychic");
-  const dados = await resposta.json();
-
-  const lista = dados.pokemon.slice(0, 12);
 
   const area = document.createElement("div");
   area.classList.add("pokemon-tipo");
 
-  for (const p of lista) {
-    const r2 = await fetch(p.pokemon.url);
-    const det = await r2.json();
+  // Buscar cada Pokémon pelo ID
+  for (const id of ids) {
+    const resp = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+    const p = await resp.json();
 
-    const cardId = "card-" + det.id;
+    const cardId = "card-" + id;
+
+    // Pegando habilidades (pega só as 2 primeiras)
+    const habilidades = p.abilities
+      .slice(0, 2)
+      .map(h => h.ability.name)
+      .join(", ");
+
+    // Pegando stat de ataque e defesa
+    const ataque = p.stats.find(s => s.stat.name === "attack").base_stat;
+    const defesa = p.stats.find(s => s.stat.name === "defense").base_stat;
 
     const card = document.createElement("div");
     card.classList.add("card");
@@ -56,14 +78,17 @@ async function chamarAPI() {
 
     card.innerHTML = `
       <div class="card-header" onclick="toggleCard('${cardId}')">
-        <img src="${det.sprites.front_default}">
-        <h3>${det.name}</h3>
-        <h4>${det.types[0].type.name}</h4>
+        <img src="${p.sprites.front_default}">
+        <h3>${p.name}</h3>
+        <h4>#${p.id}</h4>
       </div>
 
       <div class="card-content">
-        <p><b>Peso:</b> ${det.weight}</p>
-        <p><b>Altura:</b> ${det.height}</p>
+        <p><b>Peso:</b> ${p.weight / 10} kg</p>
+        <p><b>Altura:</b> ${p.height / 10} m</p>
+        <p><b>Habilidades:</b> ${habilidades}</p>
+        <p><b>Ataque:</b> ${ataque}</p>
+        <p><b>Defesa:</b> ${defesa}</p>
       </div>
     `;
 
@@ -74,9 +99,8 @@ async function chamarAPI() {
 }
 
 function toggleCard(id) {
-  const c = document.getElementById(id);
-  c.classList.toggle("expanded");
+  const card = document.getElementById(id);
+  card.classList.toggle("expanded");
 }
 
-chamarAPI();
-
+carregarPokemons();
