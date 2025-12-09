@@ -21,9 +21,10 @@ body {
 
 header{
     padding: 15px;
-    display: flex;
-    align-items: center;
     gap: 20px;
+    display: flex;
+    height: 10rem;
+
     
     img{
         height: 130px;
@@ -73,7 +74,8 @@ header{
 
   h1 {
   display: flex;
-  justify-content:left;
+  justify-content:center;
+  font-size: 80px;
   margin-left: 10px;
   font-family: "Pixelify Sans", sans-serif;
 
@@ -82,8 +84,9 @@ header{
 
   p {
   display: flex;
+  font-family: "ADLaM Display", system-ui;
   margin-left: 10px;
-  justify-content:left;
+  justify-content:center;
   text-align: justify;
   padding-bottom: 10%;
   }
