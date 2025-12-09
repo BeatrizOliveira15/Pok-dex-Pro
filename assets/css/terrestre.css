@@ -82,7 +82,7 @@ body {
   border-bottom: 2.5px solid #ffffff;
   font-family: "Signika Negative", sans-serif;
   margin-top: -5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
   padding-bottom: 5rem;
   }
 }
@@ -95,7 +95,7 @@ body {
   height: 500px;
   position: relative;
   filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
-  margin-top: 20px;
+  margin-top: 50px;
     }
 }
 
@@ -111,47 +111,109 @@ body {
   flex-direction: column;
   background-color:var(--card-color);
   width: 300px;
-  padding: 10px;
-  height: 300px;
   border-radius: 20px;
   border: 1.5px solid;
   filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
+  align-items: center;
+  border: 1.5px solid;
+}
 
-h4 {
-  font-size: 20px;
-  margin-left: 120px;
-  text-align: center;
+.card h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  margin-bottom: 10px;
   color: var(--title);
 }
 
-h2 {
-  font-size: 35px;
-  margin-left: 120px;
-  text-align: center;
+.card h3 {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
   color: var(--text-color);
 }
 
-img {
-  width: 100px;
-  height: 100px;
+.card h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  margin-bottom: 10px;
+  color: var(--title);
 }
 
-button {
- background-color: var(--title);
- align-items: center;
- height: 42px;
- border-radius: 10px;
- width: 100px;
- margin-left: 170px;
- margin-top: 15px;
-}
-
+.card img {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .card:hover {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+}
+
+.card-header {
+  cursor: pointer;
+}
+
+.card-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.card.expanded .card-content {
+  max-height: 200px;
+  padding: 10px;
+}
+
+.card-header img {
+  width: 170px;
+  height: auto;
+  margin-right: 200px;
+  margin-top: -15px;
+}
+
+.card-header h3 {
+  display: flex;
+  font-size: 35px;
+  margin-top: -80px;
+  margin-left: 120px;
+}
+
+.card-header h4 {
+  display: flex;
+  font-size: 20px;
+  margin-top: -30px;
+  margin-left: 120px;
+}
+
+.card-header h5 {
+  display: flex;
+  font-size: 20px;
+  color: var(--title);
+  margin-top: -7px;
+  margin-left: 225px;
+}
+
+.card-header button {
+    background-color: var(--modo-escuro);
+    height: 42px;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 195px;
+    margin-top: -200px;
+    margin-bottom: 10px;
+}
+
+.card-header button:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: var(--mouse);
+  color: var(--titulos);
 }
 
 
