@@ -32,6 +32,7 @@ async function chamarAPI() {
     <img src="${det.sprites.other["official-artwork"].front_default}" alt="${det.name}">
     <h2>${det.name}</h2>
     <h4>${det.types[0].type.name}</h4>
+    <h4>${det.types[1] ? det.types[1].type.name : ""}</h4>
     <h4>#${det.id}</h4>
     <button id="button">VEJA MAIS</button>
   `;

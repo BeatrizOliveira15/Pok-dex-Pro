@@ -21,9 +21,10 @@ header{
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-left: 50px;
     
     img{
-        height: 130px;
+        height: 95px;
     }
 }
 .menu{
@@ -34,6 +35,7 @@ header{
     height: 58px;
     width: 780px;
     padding: 2px;
+    margin-left: 60px;
 
     button{
         background-color: var(--titulos);
@@ -125,6 +127,7 @@ body {
     justify-content: center;
      margin-left: -1rem;
      margin-top: 23rem;
+     filter: drop-shadow(0 0 0rem rgb(255, 255, 255));
   }
 
 
