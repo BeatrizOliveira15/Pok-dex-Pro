@@ -6,6 +6,7 @@
   --card-color: #916B5E;
   --secondary-color: #FFFFFF;
   --shadow: #584738;
+  --titulo: #4B2D0F;
   --base: #96DCC9;
   --titulos: #02B082;
   --base2: #C4F9EB;
@@ -64,7 +65,6 @@ header{
 .escrita {
     width: 500px;
     margin-left: 150px;
-    margin-top: 70px;
     display: flex;
     flex-direction: column;
 
@@ -74,9 +74,9 @@ header{
   justify-content:left;
   font-family: "Pixelify Sans", sans-serif;
   margin-bottom: 20px;
-  color: var(--preto);
-  font-size: 80px;
-  margin-left: 30px;
+  color: var(--titulo);
+  font-size: 118px;
+  margin-left: -4rem;
   }
 
   p {
@@ -90,12 +90,12 @@ header{
   display: flex;
     img {
 
-  width: 500px;
-  height: 400px;
+  width: 600px;
+  height: 500px;
   position: relative;
   filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
   margin-left: 180px;
-  margin-top: 105px;
+  margin-top: 15px;
 
     }
 }
