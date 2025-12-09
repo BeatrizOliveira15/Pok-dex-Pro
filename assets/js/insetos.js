@@ -1,16 +1,28 @@
 async function chamarAPI() {
   const container = document.getElementById("escrita");
 
-  const resposta = await fetch("https://pokeapi.co/api/v2/type/bug");
-  const dados = await resposta.json();
-
-  const listapokemon = dados.pokemon.slice(0, 12);
+  const dozePokemon = [
+    "caterpie",
+    "Beedrill",
+    "Butterfree",
+    "Metapod",
+    "Pinsir",
+    "Weedle",
+    "Paras",
+    "Parasect ",
+    "Heracross",
+    "Scyther",
+    "Venonat ",
+    "Combee",
+];
 
   const bug = document.createElement("div");
   bug.classList.add("pokemon-tipo");
 
-  for (const p of listapokemon) {
-    const resposta2 = await fetch(p.pokemon.url);
+  for (const p of dozePokemon) {
+     const resposta2 = await fetch(
+        `https://pokeapi.co/api/v2/pokemon/${p}`
+    );
     const det = await resposta2.json();
 
     const card = document.createElement("div");
@@ -25,9 +37,16 @@ async function chamarAPI() {
   `;
 
     bug.appendChild(card);
+    
   }
 
   container.appendChild(bug);
+
 }
 
 chamarAPI();
+
+b1.addEventListener("click", () => {
+  
+});
+

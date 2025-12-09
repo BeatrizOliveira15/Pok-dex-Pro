@@ -112,6 +112,9 @@ body {
   top: 29rem;
   border-radius: 20px 20px 20px 20px;
   border: 1.5px solid;
+  filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
+
+  
 
   img{
     position:absolute;
@@ -158,3 +161,4 @@ button {
    
  
 }
+
