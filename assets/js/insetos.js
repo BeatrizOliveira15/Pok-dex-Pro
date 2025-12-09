@@ -17,6 +17,7 @@ async function chamarAPI() {
     card.classList.add("card");
 
     card.innerHTML = `
+    <img src="${det.sprites.other["official-artwork"].front_default}" alt="${det.name}">
     <h2>${det.name}</h2>
     <h4>${det.types[0].type.name}</h4>
     <h4>#${det.id}</h4>
