@@ -7,7 +7,47 @@
     --base2: #C4F9EB;
     --preto: black;
     --sombra: rgba(0, 0, 0, 0.484);
+    --base-escura: #027b5b;
+    --titulo:#02523d;
+    --base3:#0d9e77;
+
 }
+body.claro {
+    background-color: var(--base);
+    color: var(--titulos);
+    
+}
+
+/* 🌙 Tema Escuro */
+body.escuro {
+    background-color: var(--base-escura);
+    color: var(--titulos);
+    .menu{
+        background-color: var(--titulos);
+    }
+    a{
+        color: var(--titulo);
+    }
+    button{
+        background-color: var(--base-escura);
+        border-radius: 20px;
+        height: 40px;
+        width: 130px;
+        font-family: "ADLaM Display", system-ui;
+        font-size: 16px;
+    }
+    .main{
+        background-color: var(--titulos);
+    }
+    h1{
+        color: var(--titulo);
+    }
+    p{
+        color: var(--titulo);
+    }
+    
+}
+/*aqui*/
 header{
     padding: 15px;
     display: flex;
@@ -18,16 +58,6 @@ header{
         height: 130px;
     }
 }
-body.claro {
-    background-color: var(--base);
-    color: var(--titulos);
-}
-
-/* 🌙 Tema Escuro */
-body.escuro {
-    background-color: var(--sombra);
-    color: var(--titulos);
-}
 
 .menu{
     display: flex;
@@ -35,7 +65,7 @@ body.escuro {
     background-color: var(--base2);
     border-radius: 30px;
     height: 58px;
-    width: 780px;
+    width: 800px;
 
     button{
         background-color: var(--titulos);
@@ -45,6 +75,7 @@ body.escuro {
         width: 130px;
         font-family: "ADLaM Display", system-ui;
         font-size: 16px;
+        padding: 10px;
     }
     button:hover{
         background-color: var(--preto);
@@ -59,7 +90,7 @@ body.escuro {
 
     }
 }
-
+/*ate aqui*/
 .main{
     padding: 20px;
     background-color: var(--base2);
