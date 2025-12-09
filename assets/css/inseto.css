@@ -13,6 +13,24 @@
   --mouse: #8bd17f;
 } 
 
+/* Tema claro*/
+body.claro {
+    background-color: var(--primary-color);  
+}
+
+/* 🌙 Tema Escuro */
+body.escuro {
+    background-color: #398228;
+
+    .escrita h1{
+      color: #034503;
+    }
+
+   .card {
+    background-color: #7FB738;
+   }
+  }
+
 body {
   margin: 0;
   padding: 20px;
