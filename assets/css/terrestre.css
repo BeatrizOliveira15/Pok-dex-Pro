@@ -1,38 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
 
 :root {
   --primary-color: #BE8C6B;
   --card-color: #916B5E;
   --secondary-color: #FFFFFF;
-  --text-color: black;
-  --title: black;
   --shadow: #584738;
+  --base: #96DCC9;
+  --titulos: #02B082;
+  --base2: #C4F9EB;
+  --preto: black;
+  --sombra: rgba(0, 0, 0, 0.484);
 } 
 
-
 body {
-  margin: 0;
-  padding: 20px;
   background-color: var(--primary-color);
-
 }
 
-header {
-    margin-top: 0%;
-    height: 10rem;
-
-    img {
-      display: flex;
-      justify-content: flex-start;
-      padding-bottom: 50px;
+header{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    img{
+        height: 130px;
+        width: 300px;
     }
 }
 
-.texto {
-    width: 800px;
-    margin-left: 50px;
-    margin-top: 50px;
+.menu{
+    display: flex;
+    align-items: center;
+    background-color: var(--base2);
+    border-radius: 30px;
+    height: 58px;
+    width: 780px;
+    padding: 2px;
+
+    button{
+        background-color: var(--titulos);
+        border-radius: 20px;
+        border: var(--titulos);
+        height: 40px;
+        width: 130px;
+        font-family: "ADLaM Display", system-ui;
+        font-size: 16px;
+    }
+    button:hover{
+        background-color: var(--preto);
+        color: var(--titulos);
+    }
+    a{
+        color: var(--titulos);
+        text-decoration: none;
+        font-size: 23px;
+        padding: 18px;
+        font-family: "ADLaM Display", system-ui;
+
+    }
+}
+
+.escrita {
+    width: 500px;
+    margin-left: 150px;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
 
@@ -42,39 +74,37 @@ header {
   justify-content:left;
   font-family: "Pixelify Sans", sans-serif;
   margin-bottom: 20px;
-  color: var(--title);
+  color: var(--preto);
+  font-size: 80px;
+  margin-left: 30px;
   }
 
   p {
   display: flex;
-  justify-content:left;
-  text-align: justify;
+  text-align: center;
   padding-bottom: 10%;
   }
 }
 
-.essencial {
+.principal {
   display: flex;
     img {
 
-  width: 400px;
+  width: 500px;
   height: 400px;
   position: relative;
   filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
+  margin-left: 180px;
+  margin-top: 105px;
 
     }
 }
-
-
-
 
 .pokemon-tipo {
     display: flex;
     flex-wrap: wrap;
     gap: 80px;
     justify-content: center;
-    
-
 }
 
 .card {
@@ -87,8 +117,6 @@ header {
   flex-direction: column;
   align-items: center;
   filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
-
-
 }
 
 .card h4 {
@@ -103,9 +131,8 @@ header {
   font-size: 15px;
   display: flex;
   justify-content: center;
-  color: var(--text-color);
+  color: var(--preto);
 }
-
 
 img {
   width: 100px;
@@ -120,7 +147,8 @@ img {
   cursor: pointer;
 }
 
-
-@media screen {
-  
+@media (max-width: 500px) {
+  body { padding: 12px; }
+  .card { padding: 12px; min-height: 220px; }
+  .card img { width: 100px; height: 100px; }
 }

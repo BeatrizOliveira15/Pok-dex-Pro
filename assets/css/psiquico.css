@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
 
 
 :root {
@@ -18,21 +19,54 @@ body {
 
 }
 
-header {
-    margin-top: 0%;
-    height: 10rem;
-
-    img {
-      display: flex;
-      justify-content: flex-start;
-      padding-bottom: 50px;
+header{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    img{
+        height: 130px;
+        width: 300px;
+        
     }
 }
 
+.menu{
+    display: flex;
+    align-items: center;
+    background-color:  var(--shadow);
+    border-radius: 30px;
+    height: 58px;
+    width: 800px;
+    padding: 2px;
+
+    button{
+        background-color: var(--card-color);
+        border-radius: 20px;
+        border: var(--primary-color);
+        height: 40px;
+        width: 130px;
+        font-family: "ADLaM Display", system-ui;
+        font-size: 16px;
+    }
+    button:hover{
+        background-color: var(--primary-color);
+        color: var(--shadow);
+    }
+    a{
+        color: var(--card-color);
+        text-decoration: none;
+        font-size: 23px;
+        padding: 18px;
+        font-family: "ADLaM Display", system-ui;
+
+    }
+}
+
+
 .escrita {
     width: 800px;
-    margin-left: 50px;
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
 
@@ -40,13 +74,15 @@ header {
   h1 {
   display: flex;
   justify-content:left;
+  margin-left: 10px;
   font-family: "Pixelify Sans", sans-serif;
-  margin-bottom: 20px;
+
   color: var(--title);
   }
 
   p {
   display: flex;
+  margin-left: 10px;
   justify-content:left;
   text-align: justify;
   padding-bottom: 10%;
@@ -56,9 +92,10 @@ header {
 .principal {
   display: flex;
     img {
-
-  width: 400px;
-  height: 400px;
+  margin-left: 15px;
+  padding-bottom: 5px;
+  width: 500px;
+  height: 500px;
   position: relative;
   filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
 
@@ -125,4 +162,4 @@ img {
   body { padding: 12px; }
   .card { padding: 12px; min-height: 220px; }
   .card img { width: 100px; height: 100px; }
-}
+};
