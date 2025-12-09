@@ -63,6 +63,16 @@ async function carregarPokemons() {
   }
 
   container.appendChild(area);
+
+try {
+    carregarPokemons();
+    console.log("Resultado: ", container);
+
+}catch (e) {
+    console.log("Erro: ", e.menssage);
+}
+
+
 }
 
 function toggleCard(id) {
