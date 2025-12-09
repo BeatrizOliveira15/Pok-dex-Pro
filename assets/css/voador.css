@@ -8,7 +8,7 @@
   --secondary-color: #FFFFFF;
   --text-color: black;
   --title: #01595c;
-  --shadow: #210035;
+  --shadow: #002d2e;
   --modo-escuro: #00969B;
   --mouse: #7fccd1;
 } 
@@ -27,7 +27,8 @@ header {
 }
 
 header img {
-  height: 130px;
+  height: 95px;
+  margin-left: 50px;
 }
 
 .menu {
@@ -37,6 +38,9 @@ header img {
   border-radius: 30px;
   height: 58px;
   width: 790px;
+  padding-right: 7px;
+  margin-left: 60px;
+  border: 1.5px solid
 }
 
 .menu button {
@@ -47,6 +51,7 @@ header img {
   width: 130px;
   font-family: "ADLaM Display", system-ui;
   font-size: 16px;
+  border: 1.5px solid
 }
 
 .menu button:hover {
@@ -87,6 +92,13 @@ header img {
   font-family: "Signika Negative", sans-serif;
   font-size: 18px;
   border-bottom: 2.5px solid #ffffff;
+  margin-bottom: 40px;display: flex;
+  justify-content: left;
+  text-align: center;
+  padding-bottom: 10%;
+  font-family: "Signika Negative", sans-serif;
+  font-size: 18px;
+  border-bottom: 2.5px solid #ffffff;
   margin-bottom: 40px;
 }
 
@@ -98,7 +110,7 @@ header img {
   width: 500px;
   height: 500px;
   position: relative;
-  filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
+  filter: drop-shadow(0 0 1.5rem #002d2e);
   margin-left: 80px;
   margin-bottom: 20px;
   margin-top: 5px;
@@ -107,19 +119,20 @@ header img {
 .pokemon-tipo {
   display: flex;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 25px;
   justify-content: center;
 }
 
 .card {
   background: var(--card-color);
   padding: 10px;
-  width: 200px;
+  width: 300px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
+  border: 1.5px solid;
 }
 
 .card h4 {
@@ -137,6 +150,13 @@ header img {
   color: var(--text-color);
 }
 
+.card h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  margin-bottom: 10px;
+  color: var(--title);
+}
 
 .card img {
   display: flex;
@@ -167,6 +187,53 @@ header img {
 }
 
 .card-header img {
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: auto;
+  margin-right: 200px;
+  margin-top: -15px;
 }
+
+.card-header h3 {
+  display: flex;
+  font-size: 35px;
+  margin-top: -80px;
+  margin-left: 120px;
+}
+
+.card-header h4 {
+  display: flex;
+  font-size: 20px;
+  margin-top: -30px;
+  margin-left: 120px;
+}
+
+.card-header h5 {
+  display: flex;
+  font-size: 20px;
+  color: var(--title);
+  margin-top: -7px;
+  margin-left: 225px;
+}
+
+.card-header button {
+    background-color: var(--modo-escuro);
+    height: 42px;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 195px;
+    margin-top: -15px;
+}
+
+.card-header button:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: var(--mouse);
+  color: var(--titulos);
+}
+
+@media (max-width: 500px) {
+  body { padding: 12px; }
+  .card { padding: 12px; min-height: 220px; }
+  .card img { width: 100px; height: 100px; }
+};
