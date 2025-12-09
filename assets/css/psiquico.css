@@ -38,7 +38,8 @@ header{
     background-color:  var(--shadow);
     border-radius: 30px;
     height: 58px;
-    width: 780px;
+    width: 800px;
+    padding: 2px;
 
     button{
         background-color: var(--card-color);
@@ -66,8 +67,6 @@ header{
 
 .escrita {
     width: 800px;
-    margin-left: 50px;
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
 
@@ -75,13 +74,15 @@ header{
   h1 {
   display: flex;
   justify-content:left;
+  margin-left: 10px;
   font-family: "Pixelify Sans", sans-serif;
-  margin-bottom: 20px;
+
   color: var(--title);
   }
 
   p {
   display: flex;
+  margin-left: 10px;
   justify-content:left;
   text-align: justify;
   padding-bottom: 10%;
@@ -91,9 +92,10 @@ header{
 .principal {
   display: flex;
     img {
-
-  width: 400px;
-  height: 400px;
+  margin-left: 15px;
+  padding-bottom: 5px;
+  width: 500px;
+  height: 500px;
   position: relative;
   filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
 
@@ -160,4 +162,4 @@ img {
   body { padding: 12px; }
   .card { padding: 12px; min-height: 220px; }
   .card img { width: 100px; height: 100px; }
-}
+};
