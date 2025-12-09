@@ -10,7 +10,7 @@ const ids = [
   519, // Pidove
   587, // Emolga
   722, // Rowlet
-  741, // Oricorio (Baile Style)
+  821, // Rookidee
   823  // Corviknight
 ];
 
@@ -31,9 +31,12 @@ async function carregarPokemons() {
       .map(h => h.ability.name)
       .join(", ");
 
-    // Pegando stat de ataque e defesa
     const ataque = p.stats.find(s => s.stat.name === "attack").base_stat;
     const defesa = p.stats.find(s => s.stat.name === "defense").base_stat;
+
+    const tipos = p.types.map(t => t.type.name).join(" / ")
+
+    const imagem = p.sprites.other?.["official-artwork"]?.front_default || p.sprites.front_default
 
     const card = document.createElement("div");
     card.classList.add("card");
@@ -41,9 +44,10 @@ async function carregarPokemons() {
 
     card.innerHTML = `
       <div class="card-header" onclick="toggleCard('${cardId}')">
-        <img src="${p.sprites.front_default}">
+        <img src="${imagem}">
         <h3>${p.name}</h3>
-        <h4>#${p.id}</h4>
+        <h4>${tipos}</h4>
+        <h5>#${p.id}</h5>
       </div>
 
       <div class="card-content">
