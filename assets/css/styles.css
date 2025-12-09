@@ -30,11 +30,11 @@ body.escuro {
     }
     button{
         background-color: var(--base-escura);
-        border-radius: 20px;
-        height: 40px;
-        width: 130px;
-        font-family: "ADLaM Display", system-ui;
-        font-size: 16px;
+       
+    }
+     button:hover{
+        background-color: var(--titulo);
+        color: var(--preto);
     }
     .main{
         background-color: var(--titulos);
@@ -69,6 +69,9 @@ header{
 
     button{
         background-color: var(--titulos);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 20px;
         border: var(--titulos);
         height: 40px;
@@ -76,10 +79,11 @@ header{
         font-family: "ADLaM Display", system-ui;
         font-size: 16px;
         padding: 10px;
+    
     }
     button:hover{
-        background-color: var(--preto);
-        color: var(--titulos);
+        background-color: var(--base-escura);
+        color: var(--base);
     }
     a{
         color: var(--titulos);
@@ -136,4 +140,204 @@ footer{
         font-family: "ADLaM Display", system-ui;
         text-align: justify;
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+
+header{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    
+    img{
+        height: 50px;
+    }
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    background-color: var(--base2);
+    border-radius: 30px;
+    height: 38px;
+    width: 480px;
+    button{
+        background-color: var(--titulos);
+          display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: var(--titulos);
+        height: 30px;
+        width: 120px;
+        font-family: "ADLaM Display", system-ui;
+        font-size: 10px;
+        padding: 10px;
+    }
+    button:hover{
+        background-color: var(--base-escura);
+        color: var(--base);
+    }
+    a{
+        color: var(--titulos);
+        text-decoration: none;
+        font-size: 13px;
+        padding: 8px;
+        font-family: "ADLaM Display", system-ui;
+
+    }
+}
+
+.main{
+    padding: 10px;
+    background-color: var(--base2);
+    border-radius: 20px;
+    margin: 35px 35px;
+    height: auto;
+    box-shadow: 0 6px 6px 0 var(--sombra);
+
+    .nomes{
+        display: flex;
+        img{
+            height: 400px;
+        }
+    }
+
+    p{
+        margin-left: 90%;
+        color: var(--titulos);
+        font-size: 10px;
+        font-family: "ADLaM Display", system-ui;
+    }
+
+    h1{
+        font-size: 80px;
+        padding: 20px;
+        color: var(--titulos);
+        font-family: "Pixelify Sans", sans-serif;
+    }
+
+}
+
+footer{
+    margin: 35px 35px ;
+
+    h1{
+        font-size: 40px;
+        color: var(--titulos);
+        font-family: "ADLaM Display", system-ui;
+    }
+    p{
+        font-size: 20px;
+        color: var(--titulos);
+        font-family: "ADLaM Display", system-ui;
+        text-align: justify;
+    }
+}
+
+
+}
+
+@media screen and (max-width: 767px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    padding: 5px;
+    gap: 10px;
+    padding: 5px;
+    
+    img{
+        height: 50px;
+    }
+}
+
+.menu{
+    align-items: center;
+    background-color: var(--base2);
+    border-radius: 30px;
+    height: 30px;
+    width: 360px;
+    button{
+        background-color: var(--titulos);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: var(--titulos);
+        height: 23px;
+        width: 95px;
+        font-family: "ADLaM Display", system-ui;
+        font-size: 10px;
+        padding: 10px;
+        ;
+    }
+    button:hover{
+        background-color: var(--base-escura);
+        color: var(--base);
+    }
+    a{
+        color: var(--titulos);
+        text-decoration: none;
+        font-size: 10px;
+        padding: 5px;
+        font-family: "ADLaM Display", system-ui;
+
+    }
+}
+
+.main{
+    background-color: var(--base2);
+    border-radius: 20px;
+    margin: 20px 20px;
+    height: auto;
+    box-shadow: 0 6px 6px 0 var(--sombra);
+    
+    .nomes{
+        flex-direction: column;
+        display: flex;
+        img{
+            height: 400px;
+            width: 200px;
+            order: 1;
+        
+        }
+    }
+
+    p{
+        margin-left: 80%;
+        color: var(--titulos);
+        font-size: 10px;
+        font-family: "ADLaM Display", system-ui;
+    }
+
+    h1{
+        font-size: 65px;
+        padding: 10px;
+        color: var(--titulos);
+        font-family: "Pixelify Sans", sans-serif;
+    }
+
+}
+
+footer{
+    margin: 20px 20px ;
+
+    h1{
+        font-size: 20px;
+        color: var(--titulos);
+        font-family: "ADLaM Display", system-ui;
+    }
+    p{
+        font-size: 15px;
+        color: var(--titulos);
+        font-family: "ADLaM Display", system-ui;
+        text-align: justify;
+    }
+}
+
+
+
 }
