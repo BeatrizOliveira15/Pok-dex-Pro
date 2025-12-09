@@ -36,6 +36,7 @@ header{
     height: 58px;
     width: 800px;
     margin-left: 60px;
+     border: 1.5px solid;
 
     button{
         background-color: var(--titulos);
@@ -46,6 +47,7 @@ header{
         font-family: "ADLaM Display", system-ui;
         font-size: 16px;
         padding: 10px;
+         border: 1.5px solid;
     }
     button:hover{
         background-color: var(--preto);
