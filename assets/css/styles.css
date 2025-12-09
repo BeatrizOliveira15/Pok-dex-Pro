@@ -68,6 +68,7 @@ header{
     border-radius: 30px;
     height: 58px;
     width: 800px;
+     border: 1.5px solid;
 
     button{
         background-color: var(--titulos);
@@ -75,12 +76,12 @@ header{
         justify-content: center;
         align-items: center;
         border-radius: 20px;
-        border: var(--titulos);
         height: 40px;
         width: 130px;
         font-family: "ADLaM Display", system-ui;
         font-size: 16px;
         padding: 10px;
+        border: 1.5px solid;
     
     }
     button:hover{
@@ -153,6 +154,7 @@ header{
     align-items: center;
     gap: 20px;
     padding: 20px;
+    margin-left: 20px;
     
     img{
         height: 50px;
@@ -162,22 +164,24 @@ header{
 .menu{
     display: flex;
     align-items: center;
+    margin-left: 60px;
     background-color: var(--base2);
     border-radius: 30px;
     height: 38px;
     width: 480px;
+     border: 1.5px solid;
     button{
         background-color: var(--titulos);
           display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 20px;
-        border: var(--titulos);
         height: 30px;
         width: 120px;
         font-family: "ADLaM Display", system-ui;
         font-size: 10px;
         padding: 10px;
+         border: 1.5px solid;
     }
     button:hover{
         background-color: var(--base-escura);
@@ -247,10 +251,9 @@ footer{
     header{
         display: flex;
         flex-direction: column;
-    padding: 5px;
-    gap: 10px;
-    padding: 5px;
-    
+        padding: 5px;
+        gap: 10px;
+         margin-left: 0px;
     img{
         height: 50px;
     }
@@ -258,23 +261,24 @@ footer{
 
 .menu{
     align-items: center;
+      margin-left: 0px;
     background-color: var(--base2);
     border-radius: 30px;
     height: 30px;
     width: 360px;
+     border: 1.5px solid;
     button{
         background-color: var(--titulos);
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 20px;
-        border: var(--titulos);
         height: 23px;
         width: 95px;
         font-family: "ADLaM Display", system-ui;
         font-size: 10px;
         padding: 10px;
-        ;
+         border: 1.5px solid; 
     }
     button:hover{
         background-color: var(--base-escura);
