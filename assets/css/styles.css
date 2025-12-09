@@ -12,6 +12,7 @@
     --base3:#0d9e77;
 
 }
+/* Tema claro*/
 body.claro {
     background-color: var(--base);
     color: var(--titulos);
@@ -47,7 +48,7 @@ body.escuro {
     }
     
 }
-/*aqui*/
+
 header{
     padding: 15px;
     display: flex;
@@ -97,7 +98,7 @@ header{
 
     }
 }
-/*ate aqui*/
+
 .main{
     padding: 20px;
     background-color: var(--base2);
