@@ -3,16 +3,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
 
 :root {
-  --fundo: #BE8C6B;
-  --card-color: #916B5E;
-  --branco: #FFFFFF;
-  --shadow: #584738;
-  --titulo: #4B2D0F;
-  --titulos: #584738;
-  --base2: #916B5E;
+  --fundo1: #BE8C6B;
+  --fundo2: #5F3316;
+  --area1: #916B5E;
+  --area2:#71462A;
+  --titulos1: #584738;
+  --titulos2:#2F1A07;
+  --botao1: #584737;
+  --botao2: #5F3316;
+  --titulo1: #4B2D0F;
+  --tiulo2: #2F1A07;
+  --carde: #824D3B;
+  --bot1: #C18754;
+  --bot2: #603514;
+  --click1: #584738;
+  --click2: rgb(161, 98, 43);
   --preto: black;
-  --botao: #C18754;
-  --click: #584738;
+  --branco:white;
 } 
 
 /* Cabeçalho/Menu */
@@ -31,30 +38,35 @@ header{
 .menu{
     display: flex;
     align-items: center;
-    background-color: var(--base2);
+    background-color: var(--area1);
     border-radius: 30px;
     height: 58px;
     width: 800px;
     margin-left: 60px;
-     border: 1.5px solid;
+    border: 1.5px solid;
 
     button{
-        background-color: var(--titulos);
+        background-color: var(--botao1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 20px;
-        border: var(--titulos);
         height: 40px;
         width: 130px;
         font-family: "ADLaM Display", system-ui;
         font-size: 16px;
         padding: 10px;
-         border: 1.5px solid;
+        border: 1.5px solid;
     }
     button:hover{
         background-color: var(--preto);
-        color: var(--titulos);
+        color: var(--titulos1);
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
     }
     a{
-        color: var(--titulos);
+        color: var(--titulos1);
         text-decoration: none;
         font-size: 23px;
         padding: 18px;
@@ -64,8 +76,49 @@ header{
 }
 
 /* Corpo da página */
-body {
-  background-color: var(--fundo);
+
+/*Modo claro*/
+body.claro {
+    background-color: var(--fundo1);
+    color: var(--titulos1);
+    
+}
+
+/* 🌙 Tema Escuro */
+body.escuro {
+    background-color: var(--fundo2);
+    color: var(--titulos2);
+    .menu{
+        background-color: var(--area2);
+    }
+    a{
+        color: var(--titulos2);
+    }
+    button{
+        background-color: var(--botao2);
+       
+    }
+     button:hover{
+        background-color: var(--preto);
+        color: var(--titulos2);
+    }
+
+    .escrita h1 {
+        color: var(--tiulo2);
+    }
+    
+    .card {
+        background-color:var(--carde);
+    }
+
+    .card-header button {
+        background-color: var(--bot2);
+    }
+
+    .card-header button:hover {
+        background-color: var(--click2);
+        color: var(--preto);
+    }
 }
 
 .escrita {
@@ -77,7 +130,7 @@ body {
 
   h1 {
   font-family: "Pixelify Sans", sans-serif;
-  color: var(--titulo);
+  color: var(--titulo1);
   font-size: 118px;
   }
 
@@ -115,7 +168,7 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  background-color:var(--card-color);
+  background-color:var(--area1);
   width: 300px;
   border-radius: 20px;
   border: 1.5px solid;
@@ -205,7 +258,7 @@ body {
 }
 
 .card-header button {
-    background-color: var(--botao);
+    background-color: var(--bot1);
     height: 42px;
     border-radius: 10px;
     width: 100px;
@@ -218,7 +271,7 @@ body {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  background-color: var(--click);
+  background-color: var(--click1);
   color: var(--branco);
 }
 
@@ -239,17 +292,16 @@ body {
   .menu {
     display: flex;
     align-items: center;
-    background-color: var(--base2);
+    background-color: var(--area1);
     border-radius: 30px;
     height: 38px;
     width: 480px;
     button {
-      background-color: var(--titulos);
+      background-color: var(--botao1);
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 20px;
-      border: var(--titulos);
       height: 30px;
       width: 120px;
       font-family: "ADLaM Display", system-ui;
@@ -258,12 +310,12 @@ body {
       border: 1.5px solid;
     }
     button:hover {
-      background-color: var(--titulos);
-      color: var(--preto);
+      background-color: var(--preto);
+      color: var(--titulos1);
     }
  
     a {
-      color: var(--titulos);
+      color: var(--titulos1);
       text-decoration: none;
       font-size: 13px;
       padding: 8px;
@@ -290,7 +342,7 @@ body {
 }
 
 /*Resposividade para celular*/
-@media screen and (min-width: 500px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   header {
     display: flex;
     flex-direction: column;
@@ -306,14 +358,14 @@ body {
   .menu {
     align-items: center;
     margin-left: 0px;
-    background-color: var(--base2);
+    background-color: var(--area1);
     border-radius: 30px;
     border: var(--titulos);
     height: 30px;
     width: 360px;
     border: 1.5px solid;
     button {
-      background-color: var(--titulos);
+      background-color: var(--botao1);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -326,11 +378,11 @@ body {
       border: 1.5px solid;
     }
     button:hover {
-      background-color: var(--titulos);
-      color: var(--preto);
+      background-color: var(--preto);
+      color: var(--titulos1);
     }
     a {
-      color: var(--titulos);
+      color: var(--titulos1);
       text-decoration: none;
       font-size: 10px;
       padding: 5px;
