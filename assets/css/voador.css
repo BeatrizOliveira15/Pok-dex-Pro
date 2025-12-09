@@ -40,6 +40,7 @@ header img {
   width: 790px;
   padding-right: 7px;
   margin-left: 60px;
+  border: 1.5px solid
 }
 
 .menu button {
@@ -50,6 +51,7 @@ header img {
   width: 130px;
   font-family: "ADLaM Display", system-ui;
   font-size: 16px;
+  border: 1.5px solid
 }
 
 .menu button:hover {
