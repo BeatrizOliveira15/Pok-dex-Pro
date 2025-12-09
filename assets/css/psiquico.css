@@ -44,7 +44,7 @@ header{
     border-radius: 30px;
     height: 58px;
     width: 800px;
-    padding: 2px;
+    padding-right: 2px;
 
     button{
         background-color: var(--card-color);
@@ -137,6 +137,7 @@ header{
 h4 {
   font-size: 20px;
   margin-left: 120px;
+  margin-top: 5px;
   text-align: center;
   color: var(--title);
 }
@@ -144,6 +145,7 @@ h4 {
 h2 {
   font-size: 35px;
   margin-left: 120px;
+  margin-top: -85px;
   text-align: center;
   color: var(--text-color);
 }
@@ -152,6 +154,7 @@ h2 {
 img {
   width: 150px;
   height: auto;
+  margin-left: -3rem;
 }
 
 button {
