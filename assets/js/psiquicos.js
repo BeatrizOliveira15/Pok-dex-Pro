@@ -29,7 +29,7 @@ for (const pokemon of dozePokemon) {
     card.classList.add("card");
 
     card.innerHTML = `
-    <img src="${det.sprites.front_default}">
+    <img src="${det.sprites.other["official-artwork"].front_default}" alt="${det.name}">
     <h2>${det.name}</h2>
     <h4>${det.types[0].type.name}</h4>
     <h4>${det.types[1] ? det.types[1].type.name : ""}</h4>
