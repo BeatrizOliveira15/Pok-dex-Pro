@@ -46,9 +46,7 @@ async function chamarAPI() {
 
 chamarAPI();
 
-  //  .catch(error => {
-  //   console.error("Erro ao consumir API do Ghibli:", error);
-  // });
+b1.addEventListener("click", () => {
   
-
+});
 
