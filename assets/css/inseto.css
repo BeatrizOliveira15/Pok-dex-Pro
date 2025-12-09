@@ -95,7 +95,7 @@ body {
 
   img {
     margin-left: 80rem;
-    top:-20rem;
+    top:-23rem;
     position: relative;
     filter: drop-shadow(0 0 1.5rem rgb(18, 41, 2));
   }
@@ -112,6 +112,17 @@ body {
   top: 29rem;
   border-radius: 20px 20px 20px 20px;
   border: 1.5px solid;
+
+  img{
+    position:absolute;
+    height: 160px;
+     display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+     margin-left: -1rem;
+     margin-top: 23rem;
+  }
 
 
 h2 {
