@@ -10,6 +10,7 @@
   --text-color: black;
   --title: #42006B;
   --shadow: #210035;
+  --botao: #cf82ff;
 } 
 
 * {
@@ -28,12 +29,13 @@ body {
 header{
     padding: 15px;
     display: flex;
+    margin-left: 50px;
     align-items: center;
     gap: 20px;
     
     img{
-        height: 130px;
-        width: 300px;
+        height: 95px;
+
     }
 }
 
@@ -44,7 +46,8 @@ header{
     border-radius: 30px;
     height: 58px;
     width: 800px;
-    padding: 2px;
+    margin-left: 60px;
+    padding-right: 2px;
 
     button{
         background-color: var(--card-color);
@@ -125,7 +128,7 @@ header{
   display: flex;
   flex-direction: column;
   background-color:var(--card-color);
-  width: 325px;
+  width: 300px;
   padding: 20px;
   height: auto;
   border-radius: 20px;
@@ -137,6 +140,7 @@ header{
 h4 {
   font-size: 20px;
   margin-left: 120px;
+  margin-top: 5px;
   text-align: center;
   color: var(--title);
 }
@@ -144,34 +148,44 @@ h4 {
 h2 {
   font-size: 35px;
   margin-left: 120px;
+  margin-top: -85px;
   text-align: center;
   color: var(--text-color);
 }
 
 
 img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: auto;
+  margin-left: -3rem;
 }
 
 button {
- background-color: var(--title);
+ background-color: var(--botao);
  align-items: center;
  height: 42px;
  border-radius: 10px;
  width: 100px;
  margin-left: 170px;
  margin-top: 15px;
+ font-family: "Signika Negative", sans-serif;
 }
 
 }
-
-
 
 .card:hover {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: var(--title);
+  color: var(--secondary-color);
+
 }
 
 
