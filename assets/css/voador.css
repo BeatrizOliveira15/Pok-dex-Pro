@@ -90,6 +90,13 @@ header img {
   font-family: "Signika Negative", sans-serif;
   font-size: 18px;
   border-bottom: 2.5px solid #ffffff;
+  margin-bottom: 40px;display: flex;
+  justify-content: left;
+  text-align: center;
+  padding-bottom: 10%;
+  font-family: "Signika Negative", sans-serif;
+  font-size: 18px;
+  border-bottom: 2.5px solid #ffffff;
   margin-bottom: 40px;
 }
 
