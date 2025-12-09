@@ -53,15 +53,17 @@ header{
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-left: 40px;
     
     img{
-        height: 130px;
+        height: 95px;
     }
 }
 
 .menu{
     display: flex;
     align-items: center;
+    margin-left: 60px;
     background-color: var(--base2);
     border-radius: 30px;
     height: 58px;
