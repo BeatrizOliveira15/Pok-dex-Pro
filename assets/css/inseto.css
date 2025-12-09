@@ -220,8 +220,111 @@ header img {
   color: var(--titulos);
 }
 
-@media (max-width: 500px) {
-  body { padding: 12px; }
-  .card { padding: 12px; min-height: 220px; }
-  .card img { width: 100px; height: 100px; }
+/* RESPONSIVIDADE tablet*/
+@media screen and (min-width: 768px) and (max-width: 1099px) {
+
+  header{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 20px;
+   
+    img{
+        height: 50px;
+    }
+}
+ 
+.menu{
+  display: flex;
+    align-items: center;
+    margin-left: 60px;
+    height: 38px;
+    width: 480px;
+
+    button{
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 120px;
+        font-size: 10px;
+        padding: 10px;
+    }
+
+
+    a{
+        font-size: 13px;
+        padding: 8px;
+    }
+  }
+  
+ .pokemon-tipo {
+  margin-top: 3rem;
+ }
+}
+
+/* RESPONSIVIDADE CELULAR */
+
+@media screen and (max-width: 767px) {
+  header{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        gap: 10px;
+        align-items: center;
+
+    img{
+        height: auto;
+        width: 15rem;
+    }
+}
+ 
+.menu{
+    align-items: center;
+    margin-left: 0px;
+    height: 30px;
+    width: 360px;
+
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 23px;
+        width: 95px;
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    
+    a{
+        font-size: 10px;
+        padding: 5px;
+    }}
+
+    .principal{
+     justify-content: center;;
+    }
+
+    .principal img {
+      display: block;
+      position: absolute;
+      width: 15rem;
+      margin-left: -2rem;
+    }
+
+    .escrita{
+      margin-top: 20rem;
+      margin-left: -1rem;
+    }
+
+      .escrita h1{
+        font-size: 5rem; 
+      }
+
+      .pokemon-tipo{
+        margin-top: 2rem;
+      }
 };
+
+
