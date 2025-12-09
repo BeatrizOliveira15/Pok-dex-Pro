@@ -9,17 +9,38 @@
   --text-color: black;
   --title: #01595c;
   --shadow: #002d2e;
-  --modo-escuro: #00969b;
+  --modo-escuro: #016064;
   --mouse: #7fccd1;
+  --mE-backgroud: #00969B;
+  --mE-card: #4EABB2;
+  --mE-button: #008C91;
+  --mE-menu: #4FA0A6;
+
 }
 
-body {
+body.claro {
   margin: 0;
-  padding: 20px;
+  padding: 15px;
   background-color: var(--primary-color);
 }
 
-header {
+body.escuro {
+  background-color: var(--mE-backgroud);
+
+  .menu {
+    background-color: var(--mE-menu);
+  }
+
+  .menu button {
+    background-color: var(--mE-button)
+  }
+
+  .card {
+    background: var(--mE-card);
+  }
+}
+
+/* header {
   padding: 15px;
   display: flex;
   align-items: center;
@@ -40,7 +61,7 @@ header img {
   width: 790px;
   padding-right: 7px;
   margin-left: 60px;
-  border: 1.5px solid
+  border: 1.5px solid;
 }
 
 .menu button {
@@ -51,7 +72,7 @@ header img {
   width: 130px;
   font-family: "ADLaM Display", system-ui;
   font-size: 16px;
-  border: 1.5px solid
+  border: 1.5px solid;
 }
 
 .menu button:hover {
@@ -65,6 +86,60 @@ header img {
   font-size: 23px;
   padding: 18px;
   font-family: "ADLaM Display", system-ui;
+} */
+
+header{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 30px;
+   
+   
+    img{
+        height: 95px;
+    }
+}
+ 
+.menu{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    background-color: var(--card-color);
+    border-radius: 30px;
+    height: 58px;
+    width: 800px;
+     border: 1.5px solid;
+ 
+    button{
+        background-color: var(--modo-escuro);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        height: 40px;
+        width: 130px;
+        font-family: "ADLaM Display", system-ui;
+        font-size: 16px;
+        padding: 10px;
+        border: 1.5px solid;
+   
+    }
+    button:hover{
+        background-color: var(--modo-escuro);
+        color: var(--secondary-color);
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    a{
+        color: var(--titulos);
+        text-decoration: none;
+        font-size: 23px;
+        padding: 18px;
+        font-family: "ADLaM Display", system-ui;
+ 
+    }
 }
 
 .escrita {
@@ -92,14 +167,13 @@ header img {
   font-family: "Signika Negative", sans-serif;
   font-size: 18px;
   border-bottom: 2.5px solid #ffffff;
-  margin-bottom: 40px;display: flex;
+  margin-bottom: 40px;
+  display: flex;
   justify-content: left;
   text-align: center;
   padding-bottom: 10%;
   font-family: "Signika Negative", sans-serif;
   font-size: 18px;
-  border-bottom: 2.5px solid #ffffff;
-  margin-bottom: 40px;
 }
 
 .principal {
@@ -232,16 +306,135 @@ header img {
   color: var(--titulos);
 }
 
-@media (max-width: 500px) {
-  body {
-    padding: 12px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  header {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      height: 50px;
+    }
   }
-  .card {
-    padding: 12px;
-    min-height: 220px;
+
+  .menu {
+    display: flex;
+    align-items: center;
+    background-color: var(--card-color);
+    border-radius: 30px;
+    height: 38px;
+    width: 480px;
+    button {
+      background-color: var(--modo-escuro);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      border: var(--title);
+      height: 30px;
+      width: 120px;
+      font-family: "ADLaM Display", system-ui;
+      font-size: 10px;
+      padding: 10px;
+      border: 1.5px solid;
+    }
+    button:hover {
+      background-color: var(--mouse);
+      color: var(--base);
+    }
+    a {
+      color: var(--titulos);
+      text-decoration: none;
+      font-size: 13px;
+      padding: 8px;
+      font-family: "ADLaM Display", system-ui;
+    }
   }
-  .card img {
-    width: 100px;
-    height: 100px;
+
+  .principal {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+
+    img {
+      order: -1;
+      margin-bottom: -90px;
+    }
+  }
+
+  .escrita {
+    width: 90%;
+    margin-left: 0px;
+    margin-top: 0px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 10px;
+    margin-left: 0px;
+    img {
+      height: 50px;
+      margin-left: 5px;
+    }
+  }
+
+  .menu {
+    align-items: center;
+    margin-left: 0px;
+    background-color: var(--card-color);
+    border-radius: 30px;
+    height: 30px;
+    width: 360px;
+    border: 1.5px solid;
+    button {
+      background-color: var(--modo-escuro);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      height: 23px;
+      width: 95px;
+      font-family: "ADLaM Display", system-ui;
+      font-size: 10px;
+      padding: 10px;
+      border: 1.5px solid;
+    }
+    button:hover {
+      background-color: var(--mouse);
+      color: var(--base);
+    }
+    a {
+      color: var(--title);
+      text-decoration: none;
+      font-size: 10px;
+      padding: 5px;
+      font-family: "ADLaM Display", system-ui;
+    }
+  }
+
+  .principal {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+
+    img {
+      order: -1;
+      margin-bottom: -90px;
+      width: 400px;
+      height: auto;
+      margin-left: -10px;
+    }
+  }
+
+  .escrita {
+    width: 90%;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+
