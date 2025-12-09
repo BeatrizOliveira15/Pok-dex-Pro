@@ -3,22 +3,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
 
 :root {
-  --primary-color: #BE8C6B;
+  --fundo: #BE8C6B;
   --card-color: #916B5E;
-  --secondary-color: #FFFFFF;
+  --branco: #FFFFFF;
   --shadow: #584738;
   --titulo: #4B2D0F;
   --titulos: #584738;
   --base2: #916B5E;
   --preto: black;
+  --botao: #C18754;
+  --click: #584738;
 } 
 
+/* Cabeçalho/Menu */
 header{
     padding: 15px;
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-left: 50px;
+    margin-left: 40px;
     
     img{
         height: 95px;
@@ -33,6 +36,7 @@ header{
     height: 58px;
     width: 800px;
     margin-left: 60px;
+     border: 1.5px solid;
 
     button{
         background-color: var(--titulos);
@@ -43,6 +47,7 @@ header{
         font-family: "ADLaM Display", system-ui;
         font-size: 16px;
         padding: 10px;
+         border: 1.5px solid;
     }
     button:hover{
         background-color: var(--preto);
@@ -58,8 +63,9 @@ header{
     }
 }
 
+/* Corpo da página */
 body {
-  background-color: var(--primary-color);
+  background-color: var(--fundo);
 }
 
 .escrita {
@@ -81,9 +87,9 @@ body {
   padding: 19px;
   border-bottom: 2.5px solid #ffffff;
   font-family: "Signika Negative", sans-serif;
-  margin-top: -5rem;
-  margin-bottom: 8rem;
-  padding-bottom: 5rem;
+  margin: 5rem;
+  margin-top: -60px;
+  padding-bottom: 4rem;
   }
 }
 
@@ -199,7 +205,7 @@ body {
 }
 
 .card-header button {
-    background-color: var(--modo-escuro);
+    background-color: var(--botao);
     height: 42px;
     border-radius: 10px;
     width: 100px;
@@ -212,13 +218,148 @@ body {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  background-color: var(--mouse);
-  color: var(--titulos);
+  background-color: var(--click);
+  color: var(--branco);
 }
 
+/*Resposividade para tablet*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  header {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+ 
+    img {
+      height: 50px;
+    }
+  }
+ 
+  .menu {
+    display: flex;
+    align-items: center;
+    background-color: var(--base2);
+    border-radius: 30px;
+    height: 38px;
+    width: 480px;
+    button {
+      background-color: var(--titulos);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      border: var(--titulos);
+      height: 30px;
+      width: 120px;
+      font-family: "ADLaM Display", system-ui;
+      font-size: 10px;
+      padding: 10px;
+      border: 1.5px solid;
+    }
+    button:hover {
+      background-color: var(--titulos);
+      color: var(--preto);
+    }
+ 
+    a {
+      color: var(--titulos);
+      text-decoration: none;
+      font-size: 13px;
+      padding: 8px;
+      font-family: "ADLaM Display", system-ui;
+    }
+  }
+ 
+  .principal {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+ 
+    img {
+      order: -1;
+      margin-bottom: -90px;
+    }
+  }
+ 
+  .escrita {
+    width: 90%;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
 
-@media (max-width: 500px) {
-  body { padding: 12px; }
-  .card { padding: 12px; min-height: 220px; }
-  .card img { width: 100px; height: 100px; }
-};
+/*Resposividade para celular*/
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 10px;
+    margin-left: 0px;
+    img {
+      height: 50px;
+      margin-left: 5px;
+    }
+  }
+ 
+  .menu {
+    align-items: center;
+    margin-left: 0px;
+    background-color: var(--base2);
+    border-radius: 30px;
+    border: var(--titulos);
+    height: 30px;
+    width: 360px;
+    border: 1.5px solid;
+    button {
+      background-color: var(--titulos);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      height: 23px;
+      width: 95px;
+      font-family: "ADLaM Display", system-ui;
+      font-size: 10px;
+      padding: 10px;
+      border: 1.5px solid;
+    }
+    button:hover {
+      background-color: var(--titulos);
+      color: var(--preto);
+    }
+    a {
+      color: var(--titulos);
+      text-decoration: none;
+      font-size: 10px;
+      padding: 5px;
+      font-family: "ADLaM Display", system-ui;
+    }
+  }
+ 
+  .principal {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+ 
+    img {
+      order: -1;
+      margin-bottom: -90px;
+      width: 400px;
+      height: auto;
+      margin-left: -10px;
+    }
+  }
+ 
+  .escrita {
+    width: 90%;
+    margin-left: 0px;
+    margin-top: 40px;
+
+    h1 {
+      font-size: 80px;
+    }
+  }
+}
+ 
