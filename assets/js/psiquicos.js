@@ -17,7 +17,7 @@ const dozePokemon = [
 ];
 
 const psychic = document.createElement("div");
-psychic.classList.add("pokemon-tipo", "b-tipo");
+psychic.classList.add("pokemon-tipo");
 
 for (const pokemon of dozePokemon) {
     const resposta2 = await fetch(
@@ -30,9 +30,11 @@ for (const pokemon of dozePokemon) {
 
     card.innerHTML = `
     <img src="${det.sprites.front_default}">
-    <h3>${det.name}</h3>
+    <h2>${det.name}</h2>
     <h4>${det.types[0].type.name}</h4>
+    <h4>${det.types[1] ? det.types[1].type.name : ""}</h4>
     <h4>#${det.id}</h4>
+    <button id="button">VEJA MAIS</button>
 
   `;
 
