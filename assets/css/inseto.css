@@ -2,164 +2,154 @@
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
 
-:root{
-    --base: #5bb765;
-    --titulos: #196618;
-    --base2: #58bf62;
-    --preto: black;
-    --sombra: rgba(0, 0, 0, 0.484);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* CSS DO MENU  */
-header{
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    
-    img{
-        height: 130px;
-    }
-}
-.menu{
-    display: flex;
-    align-items: center;
-    background-color: var(--base2);
-    border-radius: 30px;
-    height: 58px;
-    width: 780px;
-    padding: 2px;
-
-    button{
-        background-color: var(--titulos);
-        border-radius: 20px;
-        border: var(--titulos);
-        height: 40px;
-        width: 130px;
-        font-family: "ADLaM Display", system-ui;
-        font-size: 16px;
-    }
-    button:hover{
-        background-color: black;
-        color: #02b019;
-    }
-    a{
-        color: var(--titulos);
-        text-decoration: none;
-        font-size: 23px;
-        padding: 18px;
-        font-family: "ADLaM Display", system-ui;
-
-    }
-}
-
-
-/* CSS DO RESTO */
+:root {
+  --primary-color:#9DCB93;
+  --card-color: #ffffff;
+  --secondary-color: #FFFFFF;
+  --text-color: black;
+  --title: #084b08;
+  --shadow: #074d05;
+  --modo-escuro: #2e9d3d;
+  --mouse: #8bd17f;
+} 
 
 body {
-  background-color: #9dcb93;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--primary-color);
 }
 
+header {
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+}
 
+header img {
+  height: 95px;
+  margin-left: 50px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  background-color: #9CCE5C;
+  border-radius: 30px;
+  height: 58px;
+  width: 790px;
+  padding-right: 7px;
+  margin-left: 60px;
+}
+
+.menu button {
+  background-color: var(--modo-escuro);
+  border-radius: 20px;
+  border: var(--titulos);
+  height: 40px;
+  width: 130px;
+  font-family: "ADLaM Display", system-ui;
+  font-size: 16px;
+}
+
+.menu button:hover {
+  background-color: var(--mouse);
+  color: var(--titulos);
+}
+
+.menu a {
+  color: var(--titulos);
+  text-decoration: none;
+  font-size: 23px;
+  padding: 18px;
+  font-family: "ADLaM Display", system-ui;
+}
 
 .escrita {
   width: 800px;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-top: 50px;
   display: flex;
-  align-items: center;
   flex-direction: column;
+}
 
-  h1 {
-    font-size: 118px;
-    font-family: "Pixelify Sans", sans-serif;
-    color: rgb(11, 76, 11);
-  }
+.escrita h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Pixelify Sans", sans-serif;
+  margin-bottom: 20px;
+  color: var(--title);
+  font-size: 100px;
+}
 
-  p {
-    font-size: 18px;
-    text-align: center;
-    padding: 19px;
-    border-bottom: 2.5px solid #ffffff;
-    font-family: "Signika Negative", sans-serif;
-  }
+.escrita p {
+  display: flex;
+  text-align: center;
+  padding-bottom: 8%;
+  font-family: "Signika Negative", sans-serif;
+  font-size: 18px;
+  border-bottom: 2.5px solid #ffffff;
+  margin-bottom: 45px;
 }
 
 .principal {
   display: flex;
-
-  img {
-    margin-left: 80rem;
-    top:-23rem;
-    position: relative;
-    filter: drop-shadow(0 0 1.5rem rgb(18, 41, 2));
-  }
 }
 
-
-.card {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #ffffff;
-  width: 325px;
-  height: 250px;
+.principal img {
+  width: 450px;
   position: relative;
-  top: 29rem;
-  border-radius: 20px 20px 20px 20px;
-  border: 1.5px solid;
-  filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
-
-  
-
-  img{
-    position:absolute;
-    height: 160px;
-     display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
-     margin-left: -1rem;
-     margin-top: 23rem;
-  }
-
-
-h2 {
-
-  font-size: 35px;
-  display: flex;
-  margin-left: 166px;
-  margin-top: 60px;
-}
-
-h4 {
-  font-size: 20px;
-  color: rgb(21, 129, 21);
-  margin-left: 200px;
-}
-
-button {
-  background-color: rgb(64, 218, 64);
-  height: 42px;
-  border-radius: 10px;
-  width: 100px;
- margin-left: 170px;
- margin-top: 15px;
-}
+  filter: drop-shadow(0 0 1.5rem #002d2e);
+  margin-left: 80px;
+  margin-top: 50px;
 }
 
 .pokemon-tipo {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
-     margin-left: -57rem;
-   
- 
+  margin-top: -100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.card {
+  background: var(--card-color);
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
+  border: 1.5px solid;
+}
+
+.card h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  margin-bottom: 10px;
+  color: var(--title);
+}
+
+.card h3 {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+}
+
+.card h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  margin-bottom: 10px;
+  color: var(--title);
+}
+
+.card img {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .card:hover {
@@ -168,10 +158,70 @@ button {
   cursor: pointer;
 }
 
-.card button:hover {
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
+.card-header {
   cursor: pointer;
 }
 
+.card-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
 
+.card.expanded .card-content {
+  max-height: 200px;
+  padding: 10px;
+}
+
+.card-header img {
+  width: 170px;
+  height: auto;
+  margin-right: 200px;
+  margin-top: -15px;
+}
+
+.card-header h3 {
+  display: flex;
+  font-size: 35px;
+  margin-top: -80px;
+  margin-left: 120px;
+}
+
+.card-header h4 {
+  display: flex;
+  font-size: 20px;
+  margin-top: -30px;
+  margin-left: 120px;
+}
+
+.card-header h5 {
+  display: flex;
+  font-size: 20px;
+  color: var(--title);
+  margin-top: -7px;
+  margin-left: 225px;
+}
+
+.card-header button {
+    background-color: var(--modo-escuro);
+    height: 42px;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 195px;
+    margin-top: -15px;
+}
+
+.card-header button:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: var(--mouse);
+  color: var(--titulos);
+}
+
+@media (max-width: 500px) {
+  body { padding: 12px; }
+  .card { padding: 12px; min-height: 220px; }
+  .card img { width: 100px; height: 100px; }
+};
