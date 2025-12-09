@@ -125,7 +125,7 @@ header{
   display: flex;
   flex-direction: column;
   background-color:var(--card-color);
-  width: 325px;
+  width: 300px;
   padding: 20px;
   height: auto;
   border-radius: 20px;
@@ -150,8 +150,8 @@ h2 {
 
 
 img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: auto;
 }
 
 button {
