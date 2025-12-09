@@ -1,21 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+
+:root{
+    --base: #5bb765;
+    --titulos: #196618;
+    --base2: #58bf62;
+    --preto: black;
+    --sombra: rgba(0, 0, 0, 0.484);
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
+/* CSS DO MENU  */
+header{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    img{
+        height: 130px;
+    }
+}
+.menu{
+    display: flex;
+    align-items: center;
+    background-color: var(--base2);
+    border-radius: 30px;
+    height: 58px;
+    width: 780px;
+    padding: 2px;
+
+    button{
+        background-color: var(--titulos);
+        border-radius: 20px;
+        border: var(--titulos);
+        height: 40px;
+        width: 130px;
+        font-family: "ADLaM Display", system-ui;
+        font-size: 16px;
+    }
+    button:hover{
+        background-color: black;
+        color: #02b019;
+    }
+    a{
+        color: var(--titulos);
+        text-decoration: none;
+        font-size: 23px;
+        padding: 18px;
+        font-family: "ADLaM Display", system-ui;
+
+    }
+}
+
+
+/* CSS DO RESTO */
+
 body {
   background-color: #9dcb93;
 }
 
-header {
-  margin-top: 0%;
-  height: 10rem;
 
-  img {
-    margin-left: 150px;
-    margin-top: 20px;
-  }
-}
 
 .escrita {
   width: 800px;
@@ -27,13 +77,16 @@ header {
 
   h1 {
     font-size: 118px;
+    font-family: "Pixelify Sans", sans-serif;
+    color: rgb(11, 76, 11);
   }
 
   p {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     padding: 19px;
     border-bottom: 2.5px solid #ffffff;
+    font-family: "Signika Negative", sans-serif;
   }
 }
 
@@ -42,7 +95,7 @@ header {
 
   img {
     margin-left: 80rem;
-    top:-20rem;
+    top:-23rem;
     position: relative;
     filter: drop-shadow(0 0 1.5rem rgb(18, 41, 2));
   }
@@ -56,9 +109,20 @@ header {
   width: 325px;
   height: 250px;
   position: relative;
-  top: 24rem;
+  top: 29rem;
   border-radius: 20px 20px 20px 20px;
   border: 1.5px solid;
+
+  img{
+    position:absolute;
+    height: 160px;
+     display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+     margin-left: -1rem;
+     margin-top: 23rem;
+  }
 
 
 h2 {
