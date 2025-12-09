@@ -57,6 +57,7 @@ header img {
   width: 790px;
   padding-right: 7px;
   margin-left: 60px;
+  border: 1.5px solid;
 }
 
 .menu button {
