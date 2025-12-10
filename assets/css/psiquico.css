@@ -282,122 +282,73 @@ header img {
 
 /*responsividade*/
 @media screen and (max-width: 767px) {
-    header{
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-        gap: 10px;
-         margin-left: 0px;
-    img{
-        height: 50px;
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 10px;
+    margin-left: 0px;
+    img {
+      height: 50px;
+      margin-left: 5px;
     }
-}
- 
-.menu{
+  }
+
+  .menu {
     align-items: center;
-      margin-left: 0px;
-    background-color: var(--base2);
+    margin-left: 0px;
+    background-color: var(--card-color);
     border-radius: 30px;
     height: 30px;
     width: 360px;
-     border: 1.5px solid;
-    button{
-        background-color: var(--titulos);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        height: 23px;
-        width: 95px;
-        font-family: "ADLaM Display", system-ui;
-        font-size: 10px;
-        padding: 10px;
-         border: 1.5px solid;
+    border: 1.5px solid;
+    button {
+      background-color: var(--primary-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      height: 23px;
+      width: 95px;
+      font-family: "ADLaM Display", system-ui;
+      font-size: 10px;
+      padding: 10px;
+      border: 1.5px solid;
     }
-    button:hover{
-        background-color: var(--base-escura);
-        color: var(--base);
+    button:hover {
+      background-color: var(--secondary-color);
+      color: var(--botao);
     }
-    a{
-        color: var(--titulos);
-        text-decoration: none;
-        font-size: 10px;
-        padding: 5px;
-        font-family: "ADLaM Display", system-ui;
- 
+    a {
+      color: var(--title);
+      text-decoration: none;
+      font-size: 10px;
+      padding: 5px;
+      font-family: "ADLaM Display", system-ui;
     }
-}
+  }
 
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
- 
- 
-header{
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    gap: 1px;
-
-   
-    img{
-        height: 45px;
-    }
-}
- 
-.menu{
-    display: flex;
-    align-items: center;
-    background-color: var(--card-color);
-    border-radius: 30px;
-    height: 38px;
-    width: 480px;
-      button{
-        background-color: var(--botao);
-          display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        border: var(--shadow);
-        height: 30px;
-        width: 120px;
-        font-family: "ADLaM Display", system-ui;
-        font-size: 10px;
-        padding: 10px;
-    }
-    button:hover{
-        background-color: var(--secondary-color);
-        color: var(--primary-color);
-    }
-    a{
-        color: var(--shadow);
-        text-decoration: none;
-        font-size: 13px;
-        padding: 8px;
-        font-family: "ADLaM Display", system-ui;
- 
-    }
-}
- 
-.principal{
+  .principal {
     flex-direction: column;
     align-items: center;
     margin-bottom: 0px;
- 
-    img{
+
+    img {
       order: -1;
       margin-bottom: -90px;
+      width: 400px;
+      height: auto;
+      margin-left: -10px;
     }
-}
- 
-.escrita{
+  }
+
+  .escrita {
     width: 90%;
     margin-left: 0px;
     margin-top: 0px;
+  }
 }
-}
- 
+
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   header {
@@ -405,13 +356,12 @@ header{
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 20px;
- 
+
     img {
       height: 50px;
     }
   }
- 
+
   .menu {
     display: flex;
     align-items: center;
@@ -437,7 +387,6 @@ header{
       background-color: var(--secondary-color);
       color: var(--primary-color);
     }
-
     a {
       color: var(--shadow);
       text-decoration: none;
@@ -446,92 +395,25 @@ header{
       font-family: "ADLaM Display", system-ui;
     }
   }
- 
+
   .principal {
     flex-direction: column;
     align-items: center;
     margin-bottom: 0px;
- 
+
     img {
       order: -1;
       margin-bottom: -90px;
     }
   }
- 
+
   .escrita {
     width: 90%;
     margin-left: 0px;
     margin-top: 0px;
   }
 }
- 
-@media screen and (min-width: 500px) and (max-width: 767px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    gap: 10px;
-    margin-left: 0px;
-    img {
-      height: 50px;
-      margin-left: 5px;
-    }
-  }
- 
-  .menu {
-    align-items: center;
-    margin-left: 0px;
-    background-color: var(--card-color);
-    border-radius: 30px;
-    height: 30px;
-    width: 360px;
-    border: 1.5px solid;
-    button {
-      background-color: var(--botao);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 20px;
-      height: 23px;
-      width: 95px;
-      font-family: "ADLaM Display", system-ui;
-      font-size: 10px;
-      padding: 10px;
-      border: 1.5px solid;
-    }
-    button:hover {
-      background-color: var(--secondary-color);
-      color: var(--primary-color);
-    }
-    a {
-      color: var(--title);
-      text-decoration: none;
-      font-size: 10px;
-      padding: 5px;
-      font-family: "ADLaM Display", system-ui;
-    }
-  }
- 
-  .principal {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 0px;
- 
-    img {
-      order: -1;
-      margin-bottom: -90px;
-      width: 400px;
-      height: auto;
-      margin-left: -10px;
-    }
-  }
- 
-  .escrita {
-    width: 90%;
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-}
+
 
 
 
