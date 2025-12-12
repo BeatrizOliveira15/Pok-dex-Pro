@@ -77,7 +77,9 @@ function toggleCard(id) {
   card.classList.toggle("expanded");
 }
 
+
 carregarPokemons();
+
 
 const botao = document.getElementById("botao");
 const body = document.body;
