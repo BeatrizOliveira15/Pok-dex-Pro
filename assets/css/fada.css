@@ -3,19 +3,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap");
 
 :root {
-  --primary-color: #96d7dc;
-  --card-color: #74bfc5;
-  --secondary-color: #ffffff;
-  --text-color: black;
-  --title: #01595c;
-  --shadow: #002d2e;
-  --modo-escuro: #016064;
-  --mouse: #7fccd1;
-  --mE-backgroud: #00969B;
-  --mE-card: #4EABB2;
-  --mE-button: #008C91;
-  --mE-menu: #4FA0A6;
-
+  --primary-color: #F6C1D1;
+  --card-color: #FADADD;
+  --secondary-color: #FFF1F6;
+  --text-color: #8F3A62;
+  --title: #D96C9F;
+  --shadow: #8a1b49;
+  --modo-escuro: #F4B6C2;
+  --mouse: #FADADD;
+  --mE-backgroud: #6F3A52;
+  --mE-card: #7F4A62;
+  --mE-button: #b36482;
+  --mE-menu: #8F5A72;
+  --mE-card-button: #63344a;
+  --mE-title: #422030;
+  --mE-tipo: #682a47;
+  --mE-pokedex: #4e1e34;
+  --mE-shadow: #390a1d;
 }
 
 body.claro {
@@ -38,55 +42,36 @@ body.escuro {
   .card {
     background: var(--mE-card);
   }
-}
 
-/* header {
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
+  .card-header button {
+    background-color: var(--mE-card-button);
+    color: var(--mouse);
+  }
 
-header img {
-  height: 95px;
-  margin-left: 50px;
-}
+  .escrita h1 {
+    color: var(--mE-title)
+  }
+  
+  .card h3 {
+    color: var(--mE-title)
+  }
 
-.menu {
-  display: flex;
-  align-items: center;
-  background-color: var(--card-color);
-  border-radius: 30px;
-  height: 58px;
-  width: 790px;
-  padding-right: 7px;
-  margin-left: 60px;
-  border: 1.5px solid;
-}
+  .card h4 {
+    color: var(--mE-tipo)
+  }
 
-.menu button {
-  background-color: var(--modo-escuro);
-  border-radius: 20px;
-  border: var(--titulos);
-  height: 40px;
-  width: 130px;
-  font-family: "ADLaM Display", system-ui;
-  font-size: 16px;
-  border: 1.5px solid;
-}
+  .card h5 {
+    color: var(--mE-pokedex)
+  }
 
-.menu button:hover {
-  background-color: var(--mouse);
-  color: var(--titulos);
-}
+  .card {
+    filter: drop-shadow(0 0 1.5rem var(--mE-shadow));
+  }
 
-.menu a {
-  color: var(--titulos);
-  text-decoration: none;
-  font-size: 23px;
-  padding: 18px;
-  font-family: "ADLaM Display", system-ui;
-} */
+  .principal img {
+    filter: drop-shadow(0 0 1.5rem var(--mE-shadow));
+  }
+}
 
 header{
     padding: 15px;
@@ -181,10 +166,10 @@ header{
 }
 
 .principal img {
-  width: 500px;
-  height: 500px;
+  width: 530px;
+  height: 600px;
   position: relative;
-  filter: drop-shadow(0 0 1.5rem #002d2e);
+  filter: drop-shadow(0 0 1.5rem var(--shadow));
   margin-left: 80px;
   margin-bottom: 20px;
   margin-top: 5px;
@@ -205,7 +190,7 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  filter: drop-shadow(0 0 1.5rem rgba(33, 0, 53, 0.68));
+  filter: drop-shadow(0 0 1.5rem var(--shadow));
   border: 1.5px solid;
 }
 
@@ -427,7 +412,6 @@ header{
       margin-bottom: -90px;
       width: 400px;
       height: auto;
-      margin-left: -10px;
     }
   }
 
