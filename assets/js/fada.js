@@ -1,17 +1,17 @@
 
 const ids = [
-  187, // Hoppip
-  333, // Swablu
-  334, // Altaria
-  373, // Salamence
-  398, // Staraptor
-  458, // Mantyke
-  468, // Togekiss
-  519, // Pidove
-  587, // Emolga
-  722, // Rowlet
-  821, // Rookidee
-  823  // Corviknight
+  36, // Clefable
+  682, // Spritzee
+  683, // Aromatisse
+  700, // Sylveon
+  719, // Diancie
+  743, // Ribombee
+  756, // Shiinotic
+  858, // Hatterene
+  869, // Alcremie
+  926, // Fidough
+  959, // Tinkaton
+  985  // Scream Tail
 ];
 
 async function carregarPokemons() {
