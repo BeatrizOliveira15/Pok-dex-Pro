@@ -1,123 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap");
 
 :root {
-  --fundo1: #BE8C6B;
-  --fundo2: #5F3316;
-  --area1: #916B5E;
-  --area2:#71462A;
+  --fundo1: #be8c6b;
+  --fundo2: #5f3316;
+  --area1: #916b5e;
+  --area2: #71462a;
   --titulos1: #584738;
-  --titulos2:#2F1A07;
+  --titulos2: #2f1a07;
   --botao1: #584737;
-  --botao2: #5F3316;
-  --titulo1: #4B2D0F;
-  --tiulo2: #2F1A07;
-  --carde: #824D3B;
-  --bot1: #C18754;
+  --botao2: #5f3316;
+  --titulo1: #4b2d0f;
+  --tiulo2: #2f1a07;
+  --carde: #824d3b;
+  --bot1: #c18754;
   --bot2: #603514;
   --click1: #584738;
   --click2: rgb(161, 98, 43);
   --preto: black;
-  --branco:white;
-} 
-
-/* Cabeçalho/Menu */
-header{
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-    
-    img{
-        height: 95px;
-    }
+  --branco: white;
+  --tituzao: #482A0D;
+  --tituluzinho: #6D3914;
 }
 
-.menu{
+/* Cabeçalho/Menu */
+header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+
+  img {
+    height: 95px;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  background-color: var(--area1);
+  border-radius: 30px;
+  height: 58px;
+  width: 800px;
+  margin-left: 60px;
+  border: 1.5px solid;
+
+  button {
+    background-color: var(--botao1);
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: var(--area1);
-    border-radius: 30px;
-    height: 58px;
-    width: 800px;
-    margin-left: 60px;
+    border-radius: 20px;
+    height: 40px;
+    width: 160px;
+    font-family: "ADLaM Display", system-ui;
+    font-size: 16px;
+    padding: 10px;
     border: 1.5px solid;
-
-    button{
-        background-color: var(--botao1);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        height: 40px;
-        width: 160px;
-        font-family: "ADLaM Display", system-ui;
-        font-size: 16px;
-        padding: 10px;
-        border: 1.5px solid;
-    }
-    button:hover{
-        background-color: var(--preto);
-        color: var(--titulos1);
-        transform: scale(1.05);
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-    }
-    a{
-        color: var(--titulos1);
-        text-decoration: none;
-        font-size: 23px;
-        padding: 18px;
-        font-family: "ADLaM Display", system-ui;
-
-    }
+  }
+  button:hover {
+    background-color: var(--preto);
+    color: var(--titulos1);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  a {
+    color: var(--titulos1);
+    text-decoration: none;
+    font-size: 23px;
+    padding: 18px;
+    font-family: "ADLaM Display", system-ui;
+  }
 }
 
 /* Corpo da página */
 
 /*Modo claro*/
 body.claro {
-    background-color: var(--fundo1);
-    color: var(--titulos1);
-    
+  background-color: var(--fundo1);
+  color: var(--preto);
 }
 
 /* 🌙 Tema Escuro */
 body.escuro {
-    background-color: var(--fundo2);
+  background-color: var(--fundo2);
+  color: var(--titulos2);
+  .menu {
+    background-color: var(--area2);
+  }
+  a {
     color: var(--titulos2);
-    .menu{
-        background-color: var(--area2);
-    }
-    a{
-        color: var(--titulos2);
-    }
-    button{
-        background-color: var(--botao2);
-       
-    }
-     button:hover{
-        background-color: var(--preto);
-        color: var(--titulos2);
-    }
+  }
+  button {
+    background-color: var(--botao2);
+  }
+  button:hover {
+    background-color: var(--preto);
+    color: var(--titulos2);
+  }
 
-    .escrita h1 {
-        color: var(--tiulo2);
-    }
-    
-    .card {
-        background-color:var(--carde);
-    }
+  .escrita h1 {
+    color: var(--tiulo2);
+  }
 
-    .card-header button {
-        background-color: var(--bot2);
-    }
+  .card {
+    background-color: var(--carde);
+  }
 
-    .card-header button:hover {
-        background-color: var(--click2);
-        color: var(--preto);
-    }
+  .card-header button {
+    background-color: var(--bot2);
+  }
+
+  .card-header button:hover {
+    background-color: var(--click2);
+    color: var(--preto);
+  }
 }
 
 .escrita {
@@ -152,49 +151,40 @@ body.escuro {
 
 .principal {
   display: flex;
-    img {
-
-  width: 650px;
-  height: 500px;
-  position: relative;
-  filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
-  margin-top: 50px;
-  margin-right: 20px;
-    }
+  img {
+    width: 650px;
+    height: 500px;
+    position: relative;
+    filter: drop-shadow(0 0 1.5rem rgba(53, 33, 0, 0.68));
+    margin-top: 50px;
+    margin-right: 20px;
+  }
 }
 
 .pokemon-tipo {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  background-color:var(--area1);
+  background-color: var(--area1);
   width: 300px;
   border-radius: 20px;
-  border: 1.5px solid;
-  filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
+  filter: drop-shadow(0 0 1.5rem rgba(53, 33, 0, 0.68));
   align-items: center;
   border: 1.5px solid;
-}
-
-.card h4 {
-  display: flex;
-  justify-content: center;
-  font-size: 10px;
-  margin-bottom: 10px;
-  color: var(--title);
+  padding: 10px;
 }
 
 .card h3 {
   font-size: 15px;
   display: flex;
   justify-content: center;
-  color: var(--text-color);
+  color: var(--tituzao);
 }
 
 .card h4 {
@@ -202,7 +192,7 @@ body.escuro {
   justify-content: center;
   font-size: 10px;
   margin-bottom: 10px;
-  color: var(--title);
+  color: var(--tituluzinho);
 }
 
 .card img {
@@ -257,19 +247,19 @@ body.escuro {
 .card-header h5 {
   display: flex;
   font-size: 20px;
-  color: var(--title);
+  color: var(--preto);
   margin-top: -7px;
   margin-left: 225px;
 }
 
 .card-header button {
-    background-color: var(--bot1);
-    height: 42px;
-    border-radius: 10px;
-    width: 100px;
-    margin-left: 195px;
-    margin-top: -200px;
-    margin-bottom: 10px;
+  background-color: var(--bot1);
+  height: 42px;
+  border-radius: 10px;
+  width: 100px;
+  margin-left: 195px;
+  margin-top: -200px;
+  margin-bottom: 10px;
 }
 
 .card-header button:hover {
@@ -288,13 +278,13 @@ body.escuro {
     align-items: center;
     gap: 20px;
     margin-left: 20px;
- 
+
     img {
       height: 50px;
     }
   }
- 
-.menu{
+
+  .menu {
     display: flex;
     align-items: center;
     margin-left: 60px;
@@ -302,49 +292,48 @@ body.escuro {
     border-radius: 30px;
     height: 38px;
     width: 480px;
-     border: 1.5px solid;
-    button{
-        background-color: var(--botao1);
-          display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        height: 30px;
-        width: 120px;
-        font-family: "ADLaM Display", system-ui;
-        font-size: 10px;
-        padding: 10px;
-         border: 1.5px solid;
+    border: 1.5px solid;
+    button {
+      background-color: var(--botao1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      height: 30px;
+      width: 120px;
+      font-family: "ADLaM Display", system-ui;
+      font-size: 10px;
+      padding: 10px;
+      border: 1.5px solid;
     }
-    button:hover{
-        background-color: var(--preto);
-        color: var(--titulos1);
-        transform: scale(1.05);
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
+    button:hover {
+      background-color: var(--preto);
+      color: var(--titulos1);
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
     }
- 
-    a{
-        color: var(--titulos1);
-        text-decoration: none;
-        font-size: 13px;
-        padding: 8px;
-        font-family: "ADLaM Display", system-ui;
 
+    a {
+      color: var(--titulos1);
+      text-decoration: none;
+      font-size: 13px;
+      padding: 8px;
+      font-family: "ADLaM Display", system-ui;
     }
   }
- 
+
   .principal {
     flex-direction: column;
     align-items: center;
     margin-bottom: 0px;
- 
+
     img {
       order: -1;
       margin-bottom: -90px;
     }
   }
- 
+
   .escrita {
     width: 90%;
     margin-left: 0px;
@@ -365,7 +354,7 @@ body.escuro {
       margin-left: 5px;
     }
   }
- 
+
   .menu {
     align-items: center;
     margin-left: 0px;
@@ -400,12 +389,12 @@ body.escuro {
       font-family: "ADLaM Display", system-ui;
     }
   }
- 
+
   .principal {
     flex-direction: column;
     align-items: center;
     margin-bottom: 0px;
- 
+
     img {
       order: -1;
       margin-bottom: -90px;
@@ -414,7 +403,7 @@ body.escuro {
       margin-left: 40px;
     }
   }
- 
+
   .escrita {
     width: 90%;
     margin-left: 0px;
@@ -422,7 +411,6 @@ body.escuro {
 
     h1 {
       font-size: 75px;
-
     }
 
     p {
