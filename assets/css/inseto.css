@@ -275,6 +275,17 @@ header {
     }
   }
 
+    .principal {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+
+    img {
+      order: -1;
+      margin-bottom: -90px;
+    }
+  }
+
   .pokemon-tipo {
     margin-top: 3rem;
   }
