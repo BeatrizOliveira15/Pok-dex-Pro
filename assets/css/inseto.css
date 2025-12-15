@@ -63,7 +63,7 @@ header img {
 .menu button {
   background-color: var(--modo-escuro);
   border-radius: 20px;
-  border: var(--titulos);
+  border: var(--title);
   height: 40px;
   width: 130px;
   font-family: "ADLaM Display", system-ui;
@@ -71,12 +71,15 @@ header img {
 }
 
 .menu button:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
   background-color: var(--mouse);
-  color: var(--titulos);
+  color: var(--title);
 }
 
 .menu a {
-  color: var(--titulos);
+  color: var(--title);
   text-decoration: none;
   font-size: 23px;
   padding: 18px;
@@ -293,9 +296,9 @@ header img {
         gap: 10px;
         align-items: center;
 
-    img{
-        height: auto;
-        width: 15rem;
+    img {
+      height: 50px;
+      margin-left: 5px;
     }
 }
  

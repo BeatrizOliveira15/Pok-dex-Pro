@@ -122,28 +122,33 @@ body.escuro {
 }
 
 .escrita {
-    width: 800px;
-    margin-left: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 800px;
+  margin-left: 40px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
 
-  h1 {
+.escrita h1 {
+  display: flex;
+  justify-content: center;
   font-family: "Pixelify Sans", sans-serif;
+  margin-bottom: 20px;
   color: var(--titulo1);
-  font-size: 118px;
-  }
+  font-size: 100px;
+}
 
-  p {
-  font-size: 18px;
+.escrita p {
+  display: flex;
+  justify-content: left;
   text-align: center;
-  padding: 19px;
-  border-bottom: 2.5px solid #ffffff;
+  padding-bottom: 10%;
   font-family: "Signika Negative", sans-serif;
-  margin: 5rem;
-  margin-top: -60px;
-  padding-bottom: 4rem;
-  }
+  font-size: 18px;
+  border-bottom: 2.5px solid #ffffff;
+  color: var(--preto);
+  margin: 2rem;
+  margin-bottom: 5rem;
 }
 
 .principal {
@@ -155,6 +160,7 @@ body.escuro {
   position: relative;
   filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
   margin-top: 50px;
+  margin-right: 20px;
     }
 }
 
@@ -282,44 +288,50 @@ body.escuro {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 20px;
+    margin-left: 20px;
  
     img {
       height: 50px;
     }
   }
  
-  .menu {
+.menu{
     display: flex;
     align-items: center;
+    margin-left: 60px;
     background-color: var(--area1);
     border-radius: 30px;
     height: 38px;
     width: 480px;
-    button {
-      background-color: var(--botao1);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 20px;
-      height: 30px;
-      width: 120px;
-      font-family: "ADLaM Display", system-ui;
-      font-size: 10px;
-      padding: 10px;
-      border: 1.5px solid;
+     border: 1.5px solid;
+    button{
+        background-color: var(--botao1);
+          display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        height: 30px;
+        width: 120px;
+        font-family: "ADLaM Display", system-ui;
+        font-size: 10px;
+        padding: 10px;
+         border: 1.5px solid;
     }
-    button:hover {
-      background-color: var(--preto);
-      color: var(--titulos1);
+    button:hover{
+        background-color: var(--preto);
+        color: var(--titulos1);
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
     }
  
-    a {
-      color: var(--titulos1);
-      text-decoration: none;
-      font-size: 13px;
-      padding: 8px;
-      font-family: "ADLaM Display", system-ui;
+    a{
+        color: var(--titulos1);
+        text-decoration: none;
+        font-size: 13px;
+        padding: 8px;
+        font-family: "ADLaM Display", system-ui;
+
     }
   }
  
@@ -400,18 +412,22 @@ body.escuro {
       margin-bottom: -90px;
       width: 390px;
       height: auto;
-      margin-left: -10px;
+      margin-left: 40px;
     }
   }
  
   .escrita {
     width: 90%;
     margin-left: 0px;
-    margin-top: 40px;
+    margin-top: 30px;
 
     h1 {
       font-size: 75px;
+
+    }
+
+    p {
+      margin-top: -2px;
     }
   }
 }
- 
