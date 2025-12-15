@@ -73,8 +73,8 @@ header{
      border: 1.5px solid var(--preto);
 
     button{
-        background-color: var(--titulos);
-        color: var(--base2);
+        background-color: var(--base3);
+        color: var(--preto);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -84,12 +84,12 @@ header{
         font-family: "ADLaM Display", system-ui;
         font-size: 16px;
         padding: 10px;
-        border: 1.5px solid var(--preto);
+        border: 1.5px solid;
     
     }
     button:hover{
-        background-color: var(--base);
-        color: var(--titulos);
+        background-color: var(--branco);
+        color: var(--base3);
         transform: scale(1.05);
         transition: all 0.3s ease-in-out;
         cursor: pointer;
