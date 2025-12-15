@@ -3,18 +3,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap");
 
 :root {
-  --primary-color: #F6C1D1;
-  --card-color: #FADADD;
-  --secondary-color: #FFF1F6;
-  --text-color: #8F3A62;
-  --title: #D96C9F;
+  --primary-color: #f6c1d1;
+  --card-color: #fadadd;
+  --secondary-color: #fff1f6;
+  --text-color: #8f3a62;
+  --title: #d96c9f;
   --shadow: #8a1b49;
-  --modo-escuro: #F4B6C2;
-  --mouse: #FADADD;
-  --mE-backgroud: #6F3A52;
-  --mE-card: #7F4A62;
+  --modo-escuro: #f4b6c2;
+  --mouse: #fadadd;
+  --mE-backgroud: #6f3a52;
+  --mE-card: #7f4a62;
   --mE-button: #b36482;
-  --mE-menu: #8F5A72;
+  --mE-menu: #8f5a72;
   --mE-card-button: #63344a;
   --mE-title: #422030;
   --mE-tipo: #682a47;
@@ -34,7 +34,7 @@ body.escuro {
   }
 
   .menu button {
-    background-color: var(--mE-button)
+    background-color: var(--mE-button);
   }
 
   .card {
@@ -47,19 +47,19 @@ body.escuro {
   }
 
   .escrita h1 {
-    color: var(--mE-title)
+    color: var(--mE-title);
   }
-  
+
   .card h3 {
-    color: var(--mE-title)
+    color: var(--mE-title);
   }
 
   .card h4 {
-    color: var(--mE-tipo)
+    color: var(--mE-tipo);
   }
 
   .card h5 {
-    color: var(--mE-pokedex)
+    color: var(--mE-pokedex);
   }
 
   .card {
@@ -71,57 +71,54 @@ body.escuro {
   }
 }
 
-header{
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-   
-   
-    img{
-        height: 95px;
-    }
+header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+
+  img {
+    height: 95px;
+  }
 }
- 
-.menu{
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+  background-color: var(--card-color);
+  border-radius: 30px;
+  height: 58px;
+  width: 800px;
+  border: 1.5px solid;
+
+  button {
+    background-color: var(--modo-escuro);
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: 60px;
-    background-color: var(--card-color);
-    border-radius: 30px;
-    height: 58px;
-    width: 800px;
-     border: 1.5px solid;
- 
-    button{
-        background-color: var(--modo-escuro);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        height: 40px;
-        width: 160px;
-        font-family: "ADLaM Display", system-ui;
-        font-size: 16px;
-        padding: 10px;
-        border: 0px;
-   
-    }
-    button:hover{
-        background-color: var(--modo-escuro);
-        color: var(--secondary-color);
-        transform: scale(1.05);
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-    }
-    a{
-        color: var(--titulos);
-        text-decoration: none;
-        font-size: 23px;
-        padding: 18px;
-        font-family: "ADLaM Display", system-ui;
- 
-    }
+    border-radius: 20px;
+    height: 40px;
+    width: 160px;
+    font-family: "ADLaM Display", system-ui;
+    font-size: 16px;
+    padding: 10px;
+    border: 0px;
+  }
+  button:hover {
+    background-color: var(--modo-escuro);
+    color: var(--secondary-color);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  a {
+    color: var(--titulos);
+    text-decoration: none;
+    font-size: 23px;
+    padding: 18px;
+    font-family: "ADLaM Display", system-ui;
+  }
 }
 
 .escrita {
@@ -418,4 +415,3 @@ header{
     margin-top: 0px;
   }
 }
-
