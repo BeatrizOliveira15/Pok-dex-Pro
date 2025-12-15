@@ -20,6 +20,7 @@ async function carregarPokemons() {
   area.classList.add("pokemon-tipo");
 
   for (const id of ids) {
+    try {
     const resp = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
     const p = await resp.json();
 
@@ -62,8 +63,12 @@ async function carregarPokemons() {
     area.appendChild(card);
   }
 
+  catch (erro) {
+        console.error(`Erro ao buscar o Pokémon ID ${id}:`, erro);}
+
   container.appendChild(area);
-}
+
+}}
 
 function toggleCard(id) {
   const card = document.getElementById(id);
@@ -72,6 +77,7 @@ function toggleCard(id) {
 
 carregarPokemons();
 
+//Modo escuro e claro
 const botao = document.getElementById("botao");
 const body = document.body;
 
