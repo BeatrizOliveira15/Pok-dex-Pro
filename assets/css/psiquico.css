@@ -24,8 +24,6 @@
 
 /*modo claro e escuro*/
 body.claro {
-  margin: 0;
-  padding: 15px;
   background-color: var(--primary-color);
 }
 
