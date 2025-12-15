@@ -398,7 +398,7 @@ body.escuro {
     img {
       order: -1;
       margin-bottom: -90px;
-      width: 400px;
+      width: 390px;
       height: auto;
       margin-left: -10px;
     }
@@ -410,7 +410,7 @@ body.escuro {
     margin-top: 40px;
 
     h1 {
-      font-size: 80px;
+      font-size: 75px;
     }
   }
 }
