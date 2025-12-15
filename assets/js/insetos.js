@@ -1,17 +1,4 @@
-const ids = [
-  10,
-  11,
-  12,
-  13,
-  15,
-  46,
-  47,
-  48,
-  123,
-  127,
-  214,
-  415
-]
+const ids = [10, 11, 12, 13, 15, 46, 47, 48, 123, 127, 214, 415];
 
 async function carregarPokemons() {
   const container = document.getElementById("pokemon-container");
@@ -20,29 +7,31 @@ async function carregarPokemons() {
   area.classList.add("pokemon-tipo");
 
   for (const id of ids) {
-      try {
-    const resp = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
-    const p = await resp.json();
+    try {
+      const resp = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+      const p = await resp.json();
 
-    const cardId = "card-" + id;
+      const cardId = "card-" + id;
 
-    const habilidades = p.abilities
-      .slice(0, 2)
-      .map(h => h.ability.name)
-      .join(", ");
+      const habilidades = p.abilities
+        .slice(0, 2)
+        .map((h) => h.ability.name)
+        .join(", ");
 
-    const ataque = p.stats.find(s => s.stat.name === "attack").base_stat;
-    const defesa = p.stats.find(s => s.stat.name === "defense").base_stat;
+      const ataque = p.stats.find((s) => s.stat.name === "attack").base_stat;
+      const defesa = p.stats.find((s) => s.stat.name === "defense").base_stat;
 
-    const tipos = p.types.map(t => t.type.name).join(" / ")
+      const tipos = p.types.map((t) => t.type.name).join(" / ");
 
-    const imagem = p.sprites.other?.["official-artwork"]?.front_default || p.sprites.front_default
+      const imagem =
+        p.sprites.other?.["official-artwork"]?.front_default ||
+        p.sprites.front_default;
 
-    const card = document.createElement("div");
-    card.classList.add("card");
-    card.id = cardId;
+      const card = document.createElement("div");
+      card.classList.add("card");
+      card.id = cardId;
 
-    card.innerHTML = `
+      card.innerHTML = `
       <div class="card-header" onclick="toggleCard('${cardId}')">
         <img src="${imagem}">
         <h3>${p.name}</h3>
@@ -60,15 +49,14 @@ async function carregarPokemons() {
       </div>
     `;
 
-    area.appendChild(card);
+      area.appendChild(card);
+    } catch (erro) {
+      console.error(`Erro ao buscar o Pokémon ID ${id}:`, erro);
+    }
+
+    container.appendChild(area);
   }
-
-  catch (erro) {
-        console.error(`Erro ao buscar o Pokémon ID ${id}:`, erro);}
-
-  container.appendChild(area);
-
-}}
+}
 
 function toggleCard(id) {
   const card = document.getElementById(id);
@@ -76,7 +64,6 @@ function toggleCard(id) {
 }
 
 carregarPokemons();
-
 
 //MODO ESCURO
 const botao = document.getElementById("botao");
@@ -91,4 +78,3 @@ botao.addEventListener("click", () => {
     botao.textContent = "Modo escuro";
   }
 });
-
