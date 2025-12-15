@@ -169,14 +169,6 @@ header img {
   border: 1.5px solid;
 }
 
-.card h4 {
-  display: flex;
-  justify-content: center;
-  font-size: 10px;
-  margin-bottom: 10px;
-  color: var(--title);
-}
-
 .card h3 {
   font-size: 15px;
   display: flex;
