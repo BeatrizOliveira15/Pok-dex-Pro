@@ -71,7 +71,7 @@ header{
     border-radius: 30px;
     height: 58px;
     width: 800px;
-     border: 1.5px solid;
+     border: 1.5px solid var(--preto);
 
     button{
         background-color: var(--titulos);
@@ -263,7 +263,7 @@ footer{
         padding: 5px;
         gap: 10px;
          margin-left: 0px;
-         
+
     img{
         height: 50px;
     }
