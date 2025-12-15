@@ -3,26 +3,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap");
 
 :root {
-  --primary-color: #CDA7FF;
-  --card-color: #E6CCFF;
-  --secondary-color: #FFFFFF;
+  --primary-color: #cda7ff;
+  --card-color: #e6ccff;
+  --secondary-color: #ffffff;
   --text-color: black;
-  --title: #42006B;
+  --title: #42006b;
   --shadow: #210035;
   --botao: #cf82ff;
 
-/*seção escura*/
+  /*seção escura*/
 
-  --backgroudescuro: #6707A2;
-  --fundomenuescuro: #8D5BCF;
-  --tituloescuro:black; 
-  --botaoescuro:#6707A2;
-  --cardescuro:#8D5BCF;
-  --botaocard: #42006B;
-  --vejamais:#CDA7FF;
-
-} 
-
+  --backgroudescuro: #6707a2;
+  --fundomenuescuro: #8d5bcf;
+  --tituloescuro: black;
+  --botaoescuro: #6707a2;
+  --cardescuro: #8d5bcf;
+  --botaocard: #42006b;
+  --vejamais: #cda7ff;
+}
 
 /*modo claro e escuro*/
 body.claro {
@@ -43,7 +41,7 @@ body.escuro {
   .card {
     background-color: var(--cardescuro);
   }
-  a{
+  a {
     color: var(--tituloescuro);
   }
 
@@ -58,18 +56,23 @@ body.escuro {
   .card-header button {
     background-color: var(--botaoescuro);
   }
-
 }
 
 /*programação*/
 
-
 header {
+
     padding: 15px;
     display: flex;
     align-items: center;
     gap: 20px;
     margin-left: 30px;
+
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+
 }
 
 header img {
@@ -79,11 +82,16 @@ header img {
 .menu {
   display: flex;
   align-items: center;
+
+
+  margin-left: 60px;
+
   background-color: var(--card-color);
   border-radius: 30px;
   height: 58px;
   width: 800px;
   border: 1.5px solid;
+
   margin-left: 60px;
 }
 
@@ -118,6 +126,36 @@ header img {
   font-size: 23px;
   padding: 18px;
   font-family: "ADLaM Display", system-ui;
+
+  button {
+    background-color: var(--botao);
+    border: var(--shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 40px;
+    width: 160px;
+    font-family: "ADLaM Display", system-ui;
+    font-size: 16px;
+    padding: 10px;
+     border: 1.5px solid;
+  }
+  button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  a {
+    color: var(--shadow);
+    text-decoration: none;
+    font-size: 23px;
+    padding: 18px;
+    font-family: "ADLaM Display", system-ui;
+  }
+
 }
 
 .escrita {
@@ -179,14 +217,6 @@ header img {
   align-items: center;
   filter: drop-shadow(0 0 1.5rem rgba(33, 0, 53, 0.68));
   border: 1.5px solid;
-}
-
-.card h4 {
-  display: flex;
-  justify-content: center;
-  font-size: 10px;
-  margin-bottom: 10px;
-  color: var(--title);
 }
 
 .card h3 {
@@ -279,7 +309,6 @@ header img {
   color: var(--secondary-color);
 }
 
-
 /*responsividade*/
 @media screen and (max-width: 767px) {
   header {
@@ -349,7 +378,6 @@ header img {
   }
 }
 
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   header {
     padding: 5px;
@@ -413,22 +441,3 @@ header img {
     margin-top: 0px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

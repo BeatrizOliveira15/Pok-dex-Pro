@@ -1,53 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap");
 
 :root {
-  --primary-color:#9DCB93;
+  --primary-color: #9dcb93;
   --card-color: #ffffff;
-  --secondary-color: #FFFFFF;
+  --secondary-color: #ffffff;
   --text-color: black;
   --title: #084b08;
   --shadow: #074d05;
   --modo-escuro: #2e9d3d;
   --mouse: #8bd17f;
-} 
+}
 
 /* Tema claro*/
 body.claro {
-    background-color: var(--primary-color);  
+  background-color: var(--primary-color);
 }
 
 /* 🌙 Tema Escuro */
 body.escuro {
-    background-color: #398228;
-      .menu{
-        background-color: #7FB738;
-      }
-      
-
-    .escrita h1{
-      color: #034503;
-    }
-
-   .card {
-    background-color: #7FB738;
-   }
+  background-color: #398228;
+  .menu {
+    background-color: #7fb738;
   }
 
+  .escrita h1 {
+    color: #034503;
+  }
+
+  .card {
+    background-color: #7fb738;
+  }
+}
 
 header {
   padding: 15px;
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
 
-    img {
-      height: 95px;
-    }
+  img {
+    height: 95px;
+  }
 }
 .menu {
-  background-color: #9CCE5C;
+  background-color: #9cce5c;
   display: flex;
   align-items: center;
   margin-left: 60px;
@@ -55,36 +53,34 @@ header {
   height: 58px;
   width: 800px;
   border: 1.5px solid;
-    button {
-       background-color: var(--modo-escuro);
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       border-radius: 20px;
-       height: 40px;
-       width: 160px;
-       font-family: "ADLaM Display", system-ui;
-       font-size: 16px;
-       padding: 10px;
-       border: 1.5px solid ;
-      }
-      button:hover {
-        transform: scale(1.05);
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-        background-color: var(--mouse);
-        color: var(--title);
-      }
-       a {
-        color: var(--title);
-        text-decoration: none;
-        font-size: 23px;
-        padding: 18px;
-        font-family: "ADLaM Display", system-ui;
-      }
+  button {
+    background-color: var(--modo-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 40px;
+    width: 160px;
+    font-family: "ADLaM Display", system-ui;
+    font-size: 16px;
+    padding: 10px;
+    border: 1.5px solid;
+  }
+  button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: var(--mouse);
+    color: var(--title);
+  }
+  a {
+    color: var(--title);
+    text-decoration: none;
+    font-size: 23px;
+    padding: 18px;
+    font-family: "ADLaM Display", system-ui;
+  }
 }
-
-
 
 .escrita {
   width: 800px;
@@ -141,7 +137,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  filter: drop-shadow(0 0 1.5rem rgba(33,0,53,0.68));
+  filter: drop-shadow(0 0 1.5rem rgba(33, 0, 53, 0.68));
   border: 1.5px solid;
 }
 
@@ -226,12 +222,12 @@ header {
 }
 
 .card-header button {
-    background-color: var(--modo-escuro);
-    height: 42px;
-    border-radius: 10px;
-    width: 100px;
-    margin-left: 195px;
-    margin-top: -15px;
+  background-color: var(--modo-escuro);
+  height: 42px;
+  border-radius: 10px;
+  width: 100px;
+  margin-left: 195px;
+  margin-top: -15px;
 }
 
 .card-header button:hover {
@@ -244,109 +240,105 @@ header {
 
 /* RESPONSIVIDADE tablet*/
 @media screen and (min-width: 768px) and (max-width: 1099px) {
-
-  header{
+  header {
     padding: 5px;
     display: flex;
     align-items: center;
     gap: 20px;
     padding: 20px;
     margin-left: 20px;
-   
-    img{
-        height: 50px;
+
+    img {
+      height: 50px;
     }
-}
- 
-.menu{
-  display: flex;
+  }
+
+  .menu {
+    display: flex;
     align-items: center;
     margin-left: 60px;
     height: 38px;
     width: 480px;
 
-    button{
-        justify-content: center;
-        align-items: center;
-        height: 30px;
-        width: 120px;
-        font-size: 10px;
-        padding: 10px;
+    button {
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 120px;
+      font-size: 10px;
+      padding: 10px;
     }
 
-
-    a{
-        font-size: 13px;
-        padding: 8px;
+    a {
+      font-size: 13px;
+      padding: 8px;
     }
   }
-  
- .pokemon-tipo {
-  margin-top: 3rem;
- }
+
+  .pokemon-tipo {
+    margin-top: 3rem;
+  }
 }
 
 /* RESPONSIVIDADE CELULAR */
 
 @media screen and (max-width: 767px) {
-  header{
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-        gap: 10px;
-        align-items: center;
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 10px;
+    align-items: center;
 
     img {
       height: 50px;
       margin-left: 5px;
     }
-}
- 
-.menu{
+  }
+
+  .menu {
     align-items: center;
     margin-left: 0px;
     height: 30px;
     width: 360px;
 
-    button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 23px;
-        width: 95px;
-        font-size: 10px;
-        padding: 10px;
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 23px;
+      width: 95px;
+      font-size: 10px;
+      padding: 10px;
     }
 
-    
-    a{
-        font-size: 10px;
-        padding: 5px;
-    }}
-
-    .principal{
-     justify-content: center;;
+    a {
+      font-size: 10px;
+      padding: 5px;
     }
+  }
 
-    .principal img {
-      display: block;
-      position: absolute;
-      width: 15rem;
-      margin-left: -2rem;
-    }
+  .principal {
+    justify-content: center;
+  }
 
-    .escrita{
-      margin-top: 20rem;
-      margin-left: -1rem;
-    }
+  .principal img {
+    display: block;
+    position: absolute;
+    width: 15rem;
+    margin-left: -2rem;
+  }
 
-      .escrita h1{
-        font-size: 5rem; 
-      }
+  .escrita {
+    margin-top: 20rem;
+    margin-left: -1rem;
+  }
 
-      .pokemon-tipo{
-        margin-top: 2rem;
-      }
-};
+  .escrita h1 {
+    font-size: 5rem;
+  }
 
-
+  .pokemon-tipo {
+    margin-top: 2rem;
+  }
+}
