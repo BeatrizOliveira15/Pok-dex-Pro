@@ -21,6 +21,10 @@ body.claro {
 /* 🌙 Tema Escuro */
 body.escuro {
     background-color: #398228;
+      .menu{
+        background-color: #7FB738;
+      }
+      
 
     .escrita h1{
       color: #034503;
@@ -31,59 +35,56 @@ body.escuro {
    }
   }
 
-body {
-  margin: 0;
-  padding: 20px;
-  background-color: var(--primary-color);
-}
 
 header {
   padding: 15px;
-  display: flex;
-  gap: 20px;
-}
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
 
-header img {
-  height: 95px;
-  margin-left: 50px;
+    img {
+      height: 95px;
+    }
 }
-
 .menu {
+  background-color: #9CCE5C;
   display: flex;
   align-items: center;
-  background-color: #9CCE5C;
+  margin-left: 60px;
   border-radius: 30px;
   height: 58px;
   width: 800px;
-  margin-left: 60px;
   border: 1.5px solid;
+    button {
+       background-color: var(--modo-escuro);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border-radius: 20px;
+       height: 40px;
+       width: 160px;
+       font-family: "ADLaM Display", system-ui;
+       font-size: 16px;
+       padding: 10px;
+       border: 1.5px solid ;
+      }
+      button:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        background-color: var(--mouse);
+        color: var(--title);
+      }
+       a {
+        color: var(--title);
+        text-decoration: none;
+        font-size: 23px;
+        padding: 18px;
+        font-family: "ADLaM Display", system-ui;
+      }
 }
 
-.menu button {
-  background-color: var(--modo-escuro);
-  border-radius: 20px;
-  border: var(--title);
-  height: 40px;
-  width: 130px;
-  font-family: "ADLaM Display", system-ui;
-  font-size: 16px;
-}
 
-.menu button:hover {
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  background-color: var(--mouse);
-  color: var(--title);
-}
-
-.menu a {
-  color: var(--title);
-  text-decoration: none;
-  font-size: 23px;
-  padding: 18px;
-  font-family: "ADLaM Display", system-ui;
-}
 
 .escrita {
   width: 800px;
